@@ -1,0 +1,1920 @@
+English Name: IBM ZGC Campus. Ring Building
+Address: 28,ZhongGuanCun Software Park,No.8 Dong Bei Wang West Road, Haidian District Beijing P.R.China 100193
+Chinese Name: IBM环宇大厦
+通邮地址：北京市海淀区东北旺西路8号中关村软件园28号楼 环宇大厦 邮政编码：100193
+
+-------------------------------
+HK: 00852, TW: 00886, CHN: 0086
+------------------------Ecurep : ftp -----(http://www-05.ibm.com/de/support/ecurep/send.html)---------------------
+您好：
+
+请用以下方法上传日志：
+0). 运行pdcollect,(pdcollect.sh or pdcollect.cmd)得到生成的文件包。
+1). 将所有文件打成.zip或者.Z或者.jar的包(例如 abc.zip);
+2). http://www.ecurep.ibm.com/app/upload_sf   （需要有IBM ID）
+或者:  http://192.109.81.20/app/upload_sf
+3). 在‘Case number:*’处填上Case号，本次上传，这里填：TSxxxxxxxx
+4). 在‘Email address：’处填上邮件地址（可选）; 点击"continue"
+5). 点击"点击选择文件"，将打包好的文件abc.zip选中;
+8). 点击‘Upload’
+确保上传成功。
+
+谢谢
+Liu Ying Jian
+
+Hello
+1). zip all of files to a file (for instance: abc.zip or abc.jar);
+2). http://www.ecurep.ibm.com/app/upload_sf
+or:  http://192.109.81.20/app/upload_sf
+3). At 'Case number:*',fill up case number, here is : TSxxxxxxxxx
+4). At 'Email address：',fill up email address,then click "continue"
+5). Click 'Click to Select Files',upload abc.zip or abc.jar 
+6). Click ‘Upload’
+Thanks
+Liu Ying Jian
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+如果要上传文件给客户，在AE5中的他的case的 files -> add files,相当于给客户发了带附件的邮件，过一会能看到上传内容，用右键->transfer->publish for download
+---------------------------------------------------- GSA register account : -------------------------------------------------------------------------
+GSA: liuyj : Asdfghjklqwertyuiop1! (old:  Zxcvbnmasdfghjkl1!   Mko0)nji9(bhu8*  (old:Zaq1!xsw2@cde3#))
+
+http://pokgsa.ibm.com/gsadoc/help/rmgsapassword.shtml#change
+点击reset password来更改密码
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. For APM case
+
+Hi  xxxx
+
+This is to acknowledge receipt of your update.
+
+In order to determine the problem and deal with it in short time,
+Could you please send me the following information:
+1. Product version and fixpack level
+2. O/S version
+3. Problem details (including any screenshots or error messages seen).
+4. Business Impact
+5. Necessary logs or information
+1). if it is APM server problem, execute install_dir/ccm/collectLogs.sh and upload result
+2). if it is APM agent problem, execute install_dir/ccm/collectLogs.sh against the APM server and a pdcollect against the agent, then, upload result.
+For the APM Server see: https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/trouble_logs_server.htm
+For the APM agent(s) see: https://www.ibm.com/support/knowledgecenter/en/SSMKFH/com.ibm.apmaas.doc/install/trouble_logs_agents.htm
+6. The method to upload above information :
+1). zip all of files to a file (for instance: abc.zip or abc.jar);
+2). http://www.ecurep.ibm.com/app/upload_sf
+or:  http://192.109.81.20/app/upload_sf
+3). At 'Case number:*',fill up case number, here is : TSxxxxxxxxx
+4). At 'Email address：',fill up email address,then click "continue"
+5). Click 'Click to Select Files',upload abc.zip or abc.jar 
+6). Click ‘Upload’
+
+The Primary engineer will be notified and will be able to get back to you as soon as they started their day.
+----------------------------------------------------------------------------------------------------------------------------------
+2
+Hello,
+
+This is to acknowledge receipt of your update.
+The Primary engineer will be notified and will be able to get back to you as soon as they started their day in EMEA.
+
+Thanks & Regards
+APM support
+--------------------------------------------------------------------------------------------
+A Support Engineer will get back to you soon.
+--------------------------------------------------------------------------------------------
+Hi <Customer>
+We are in receipt of your new case regarding <issue summary> and have begun investigating. 
+A support engineer will follow up with the next steps for this issue.
+
+Hi <Customer>
+We are in receipt of your new case and have begun investigating. 
+A support engineer will follow up with the next steps for this issue
+--------------------------------------------------------------------------------------------
+Thanks for your update.
+
+As this issue is not a real S1 case(S1 is only for production env system down), may I reset the severity to S2 ?  
+For S1 case,  there are different L2 engineer from different regions to handle the issue and also we need customer 24*7 standby.
+--------------------------------------------------------------------------------------------
+This is Liu Ying Jian from L2 support. I have taken the ownership of this case and I'm going to verify your request.
+I'll keep you informed about my analysis
+--------------------------------------------------------------------------------------------
+Hello, this is Liu Yingjian in IBM support and received your case. 
+Can you please clarify the issue and the product that you have an issue and send any appropriate documentation?
+So we can further assist and get you to the correct support team
+Thanks
+
+Liu ying jian
+-------------------------------------------------------------------------------------------
+
+Action taken:
+
+update ack.
+
+​Action plan:
+
+owner to follow up.
+******************send to customer : PPA PPA******apecare@sg.ibm.com ************************************************
+
+您好！
+  您可以使用PPA服务下载IBM的软件安装介质：
+
+1、您需要知道签订PPA合同时所登记的用户的email地址；
+2、用上面的email地址,在IBM网站上注册一个用户帐户（IBM ID）；
+3. 访问：https://www.ibm.com/software/passportadvantage/pao_customer.html
+   点击"Sign in to your PAO site"     
+4. 键入"IBMID" 和 "PASSWORD" , 选择一个正确的site number。
+5. 在屏幕右侧的 "Quick Entry" 处，点击 "Download software"或者"Download Patches and Fixes"  
+(如何没有看到，就说明这个登录的用户没有权限，需要到参考8来寻求支持)
+6. 点击 "continue"，在"Search your entitled software"下选择查找软件的种类："Part number" 或
+   "Part description",找出软件后，下载。
+7. 如果出现"Self-nomination"以及输入'site number' 页面或者输入IBM ID和Password后出现 "Self-nomination" 页面，则表明当前的用户没有权限下载介质，需要拨打以下电话寻求支持。
+
+8.如果在下载过程中有任何问题，请联系致电 10 800 610 0126，转1可以选择普通话服务，再转6可选择PPA相应的帮助。
+请注意是10800开头(要开通国际长话功能），不是800，也不是北京的区号010-800,移动手机可以拨打。
+Hong Kong	+852-800 933 594	（8:00 a.m - 6:00 p.m）
+Taiwan	008 01611256  （8:00 a.m - 6:00 p.m）
+
+PPA support team: https://w3.ibm.com/w3publisher/dsw-commerce/tribe-and-squad/ecare
+联系电话：
+https://www-112.ibm.com/software/howtobuy/passportadvantage/homepage/ecarec
+worldwide contact:
+https://www.ibm.com/planetwide/index.html#region
+
+
+如果只是忘记PPA 用户名和密码，可以通过‘IBM软件维护部客户关怀中心’寻求帮助，它们的电话是
+	010-82455788
+	010-82455713
+	010-82455562
+
+更详细的步骤，可以参考 ：
+http://www-01.ibm.com/support/docview.wss?uid=swg21414792
+
+my document -> Hybird Cloud TEAM operation -> PPA login screenshots.doc  有截图
+----------------------------------------------------------------------------------
+MSDN license 在 Testing Machines.txt 中找MSDN 有说明。
+----------------------------------------------------------------------------------
+RHEL (redhat) : warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+modify /etc/locale.conf : add LC_ALL="en_US.UTF-8" before LC_TYPE="en_US.UTF-8"
+----------------------------------------------------------------------------------
+
+Go to the product announcement website.
+https://www-01.ibm.com/common/ssi/index.wss?request_locale=en
+
+In the Search for field, enter the product identifier (PID) for your product. The PID for IBM Spectrum Protect is 5725-W98.
+In the Information Type field, select Announcement letters, and click Search.
+From the Search in list, select Product Number.
+Optional: In the Refine Your Search pane on the left side of the window, select the country where you reside.
+In the Sort by section, select Newest first.
+------------------------------------------------------------------------------------
+new survery :  Medallia system 
+
+您好：
+由于这个问题解决了，我就关闭这个问题了，以后如果再有问题，欢迎随时开CASE咨询。
+
+几天内，会有邮件发到这个邮箱，来评估support结果。
+我的目标是在 “How likely are you to recommend IBM to others" 的问题上是10分（你能相信吗，在我们的评估体系中，这个分数如果低于8分，
+最终得分不是0分，是 -100 分！），
+请给予10分回答。
+谢谢
+
+liuyingjian 
+------------------------------------------------------------------------------------------------------------------------------
+I saw you closed the case.
+Are you satisfied my solution or service in the case ?
+If you are not satisfied, please inform me or send email to my manager "gchen@cn.ibm.com", we could do further discussing.
+If you are satisfied, please give an 10 score to the question "How likely are you to recommend IBM to others", 
+The survey email  will be sent to you in within a couple of days.
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+Hi ,
+Thanks for the status update. I'll go ahead and close this case as per your comments
+.
+Please note that you might receive a Customer Satisfaction survey, evaluating your experience with IBM Support. If you do receive a survey invitation, please take a few short minutes to respond.
+Your feedback (negative, passive, positive) is valuable and helps us to continually improve our service.
+
+If you give an 10 score in question "How likely are you to recommend IBM to others", that is the greatest encouragement for me.
+
+For your reference: (0-6 negative experience, 7-8 passive experience, 9-10 positive experience)
+Regards
+liu ying jian
+-------------------------------------madalia / madallia--------------------------------------------------------
+
+Procedure: if you don't know how to operate it still, please call me when you can log on system
+
+1) Log on Medallia system link: https://ibm.medallia.com/sso/ibm with your intranet ID
+2) Go to "Responses" TAB, select time period : "Year to Date(2018)", Country: The peoples Rep of China",then click Run button
+3) search TSxxxxxxxx
+或者在 右侧 search 中输入case号，点击 “RUN”
+4) call backup 后点击 addnotes 。
+5） change owner to ying jian liu
+6) update alert -> 填上相应的信息， close it
+
+或者：
+1) Log on Medallia system link: https://ibm.medallia.com/sso/ibm with your intranet ID
+2) Go to "Responses" page, select time period : "Previous year", IOT: "CG",  alert Filter: "All open", then click Run button
+3). click 右边括号里，search : ying jian liu, 然后写点什么，就会出现close alert按钮。
+
+如果直接点击邮件里的link，从右边“Owner"->ying jian liu, add notes , save -> fill up "Client Discussion" and others, click "Update Alert" ->下面”Save and Close Alert"
+
+查自己的survey的结果：
+1.  https://ibm.medallia.com/sso/ibm
+2.  Go to "Responses" TAB, select time period : "Year to Date(2018)", 
+3. segment ： 900341672 （有3个都有加上）
+4. RUN
+5. 主页的Dashboards（HOME），下面可以看到'Support NPS' 和 'Support Satisfaction' 2个值。
+
+
+(for details, please check notes, subject : Please close pending Alerts in Medallia asap send by Tie Shan Hou  on 2017/2/10 )
+
+(old web survey :
+
+http://www.service800.com/eSurvey/eSurvey.aspx?survey=SH~54~DEMO54~ES
+)
+--------------------------------------------------------------------------------------------------------------------------
+bluecare support : GSMA: Jun Hua Bie said from slack that: 
+For any issues related to GSMA custom agents,  please contact with L2 Monitoring specialists:
+Kacper Kurowski1/Poland/IBM@IBM, Tsimafei Tsykunou1/Belarus/Contr/IBM@IBM, Adam Lacny/Poland/IBM@IBM
+For monitoring, we have switched to JIRA from RTC，any case of problem with GSMA custom agents, please open Service ticket on JIRA：
+https://jsw.ibm.com/projects/MNE/summary
+The link is:
+https://w3.ibm.com/w3publisher/global-monitoring-event-management/monitoring-and-performance-management/gsma-custom-agents-summary
+
+https://w3.ibm.com/w3publisher/global-monitoring-event-management/monitoring-and-performance-management/gsma-custom-agents-summary/k06-gsma-windows-os-agent
+
+you will need to open a ticket with the GSMA support team by following the instructions as given in the following link :
+https://w3.ibm.com/w3publisher/global-monitoring-event-management/monitoring-and-performance-management/gsma-custom-agents-summary
+This issue will be handled by them and is out of scope of our support.
+
+bluecare team: bluepages search : bluecare, 
+where, Na Yang杨 娜 M&E BlueCARE Development Lead/M&E NextGen DevOps  Global Business Services
+--------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------summary ------------------------------------------
+http://www-01.ibm.com/support/docview.wss?uid=swg21697924  
+all of methods for upload logs
+--------------------------------------------------------------------------------
+execute : ibmsdduu.jar in this directory
+-------------------------------------------------------------------------------
+toally methods: 
+Exchanging information with IBM Technical Support for problem determination
+http://www-304.ibm.com/support/docview.wss?uid=swg21153852  
+
+**************************************************************************************************
+Used Citrix:
+Your Userid liuyingj@cn.ibm.com has successfully be registered and you are now able to access our Citrix for Secure Support environment.
+You can access Citrix using the url https://windebug.mainz.de.ibm.com    
+
+General Citrix Support will be available 7x24 via phone International 0035318159190, internal ITN 37159190
+Citrix FAQ's are listed here -> http://ibm.biz/citrix4support
+(This link contains the support entry point http://ibm.biz/citrix4support. 
+We have a lot of Q&A stored within CSP not just for Citrix also for ECuRep in general. The content is updated regularly to reflect most current issues.)
+Citrix Technical Topics are documented here -> http://ibm.biz/citrix_tech
+Address open questions within the Secure Support Forum at http://ibm.biz/secsupforum
+Address issues using IT-Center PCM application -> http://ibm.biz/pcm4ever (Template ECuRep -> Citrix ECuRep - Citrix Secure Support Issue) 
+
+Kind regards,
+Your IT Center Team 
+
+
+apply citrix access: 
+
+1. install citrix receiver : download it and install it : 
+https://apps.na.collabserv.com/wikis/home?lang=en-us#!/wiki/W620a99f1a73e_4d3a_b250_40751df17b67/page/Citrix%20FAQ%27s?section=ii3
+go to 5 : What is needed to use Citrix ?, download and install it
+
+2. How to request access ?
+go to 3. How to request access ?
+https://w3-connections.ibm.com/forums/html/topic?id=3d670988-a1ce-443a-a9a4-d5acd6132efe&ps=25
+click : ITIM link ->
+https://ibmpitimwas50.megacenter.de.ibm.com/itim/self/jsp/logon/login.jsp
+
+3. click: request access
+3.1. check request: https://ibmpitimwas50.megacenter.de.ibm.com/itim/self/Home.do  :-> view my request
+4. search in  "Group", search for "DE-MTSITC:ECUREPLDAP--CITRIX"
+(其他参考：https://apps.na.collabserv.com/wikis/home?lang=en-us#!/wiki/W620a99f1a73e_4d3a_b250_40751df17b67/page/Request%20access%20to%20Citrix%20Environment)
+
+查找邮件，主题： PCM CustomerRequest updated - 4 - 26/07/2021 - @Michael, @Heiko Re: Fw: revoke ISIM account - (M210712201933P)  （2021-7-13）
+或者verse 中 查找相同的邮件，然后点击 邮件主题下面的 ‘该邮件包含可能需要使用 HCL Notes、HCL Client Application Access 或 HCL Nomad 查看的内容。警告：此操作会将您引导至可能包含不可访问内容的页面。打开’
+这样能打开notes 邮件，并且下方的 connection：itcd6s1/IBMMZ 可以点击使用。
+或者直接发邮件给 ：GERITIM@de.ibm.com
+***************************************************************************************************
+
+问题：1. citrix 键盘layout 要修改语言，增加美国，删除kingdom，然后重启citrix receiver
+问题：2. 启动citrix view后，是空白屏幕，没有出现应用菜单， 此时 空回车一下， 或者到 windows 底部，点击‘show hiden icons'，看看有没有应用菜单icon,有就clik 它，是之显示出来。
+------------PMR -----------------------------------------------------------
+-----------------------case warming--------------------------------------------------------
+您好：
+
+请用以下方法上传日志：
+0). 运行pdcollect,(pdcollect.sh or pdcollect.cmd)得到生成的文件包。
+1). 将所有文件打成.zip或者.Z或者.jar的包(例如 abc.zip);
+2). http://www.ecurep.ibm.com/app/upload
+或者:  http://192.109.81.20/app/upload
+3). 在‘PMR number：’处填上PMR号，本次上传，这里填：xxxxx,yyy,zzz
+4). 在‘upload is for:' 处选中‘Tivoli’;
+5). 在‘Email address：’处填上邮件地址（可选）;
+6). 点击‘Continue’;
+7). 点击‘选择文件’，将打包好的文件abc.zip选中;
+8). 点击‘Upload’
+确保上传成功。
+谢谢
+Hello
+1). zip all of files to a file (for instance: abc.zip);
+2).  http://www.ecurep.ibm.com/app/upload
+or :  http://192.109.81.20/app/upload
+3). At ‘PMR number:*’,fill up PMR number, here is : xxxxx.xxx.xxx
+4). At 'Upload is for", select 'Tivoli'
+5). At ‘Email address：’fill up email address
+6). Click ‘select files’，or 'Or Drop Files Here', upload abc.zip 
+7). Click ‘Upload’
+Thanks
+-------------------------------------------------------------------------------------------------
+Hi ,
+I am Liu Ying jian from ITM/APM support team,I will assist you on this case.
+you have opened a new ITM case. Please send me the following information:
+1. Product version and fixpack level
+2. O/S version
+3. Problem details
+4. Business Impact
+5. Any screen capture and/or log files
+You can upload logs via http:
+http://www.ecurep.ibm.com/app/upload_sf
+Case number TSxxxxxxx
+Thanks & Regards,
+Liu Ying jian
+----------------------------------------------------------------------------------------------
+Hi ,
+This is IWS/TWS support team, you have opened a new IWS case. Please send me the following information:
+1. Product version and fixpack level
+2. O/S version
+3. Problem details
+4. Business Impact
+5. Any screen cap and/or log files
+You can upload logs via http:
+http://www.ecurep.ibm.com/app/upload_sf
+Case number TSxxxxxxx
+Thanks & Regards,
+Liu Ying jian
+--------------------------------------------------------------------------------
+Hi ,
+I am Liu Ying jian from CSI support team, you have opened a new case. Please send me the following information:
+1. Which product is having a problem ?
+2. Product version and fixpack level
+3. O/S version
+4. Problem details
+5. Business Impact
+6. Any screen cap and/or log files
+You can upload logs via http:
+http://www.ecurep.ibm.com/app/upload_sf
+Case number TSxxxxxxx
+Thanks & Regards,
+Liu Ying jian
+--------------------------------------------------------------------------------------------
+1. For ITM/ITCAM case
+Hi  xxxx
+This is to acknowledge receipt of your update.
+
+In order to determine the problem and deal with it in short time,
+Could you please send me the following information:
+1. Product version and fixpack level
+2. O/S version
+3. Problem details (including any screenshots or error messages seen).
+4. A pdcollect from the problem component(s)
+See: http://www-01.ibm.com/support/docview.wss?uid=swg21284703
+5. Business Impact
+
+The Primary engineer will be notified and will be able to get back to you as soon as they started their day.
+
+Regards &  Thanks
+--------------------------------------------------------------------------------
+I am Liu ying jian from ITM support Support team, and I will assist you in this PMR.                                                                      
+This issue is about "Not found table for MQ agent attributes in tivoli warehouse db"
+Please get the following message for further investigating
+1. enable historical data collect screenshots
+2. pdcollect for problematic MQ agent
+3. pdcollect for WPA 
+--------------------------------------------------------------------------------
+I will engage my on call engineer but please kindly be aware that he won’t be exceptionally available until approximately 4-5 hours from now. 
+As soon as he is available this will be his first priority and he will be able to review the case and confirm the next steps. 
+--------------------------------------------------------------------------------------------------
+https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Support%20Content%20Information%20Wiki
+support wiki
+
+dcf - technotes  :developerwork sunset, you could 1. start lantern 2. use google cache to see the old docs.
+
+DCF 1322517                                        
+http://www-01.ibm.com/support/docview.wss?uid=swg21322517 
+
+http://www-01.ibm.com/support/docview.wss?uid=swg2
+
+or: for dcf 1247118
+https://ldbdcf1.lotus.com/dcf/dcfdocs.nsf/all/1247118?OpenDocument
+
+technotes: 1144652  in wellspring.
+https://eclient2.lenexa.ibm.com:9443/search/?fetch=source/TechNote/1144652
+
+wellspring admin help : http://dobro.lenexa.ibm.com:8080/xwiki/bin/view/WellSpring/?xpage=print
+
+wellsrping wiki: https://w3-connections.ibm.com/wikis/home?lang=en#!/wiki/W2248c688037b_4b0c_b263_4711e9f14a2a
+
+wellsrping system monitor tool: http://esupmiscw7.canlab.ibm.com/monitor/
+Wellspring : 
+http://dobro.lenexa.ibm.com:8080/xwiki/bin/view/WellSpring/SecurityInstructions
+searching:
+ https://eclient.lenexa.ibm.com:9445/search
+
+
+HTTP: http://eclient.lenexa.ibm.com:9082/search/ 
+HTTPS: https://eclient.lenexa.ibm.com:9445/search/ 
+
+please send an email to wellspring-core distribution list
+admin :Shaikh Quader : shaikhq@ca.ibm.com  
+	
+web retain / webretain:
+https://longspeakz.boulder.ibm.com/WebRetain/logon.jsp
+
+在notify -》queue name:pbti center:50g	,email ID: liuyingj , email node:IBMCN
+则一旦pbti，50g中的PMR有update，产生了scg等，会有一封邮件发到liuyingj@cn.ibm.com
+设置好后，在notify的list 可以查到所有设置的内容。
+
+salesforce : 
+0. login console: https://ibmsf.my.salesforce.com
+1. training : https://yourlearning.w3bmix.ibm.com/#channel/CNL_LCB_1507043415190
+2. apply permission and become agent: https://ibm.ent.box.com/s/3200aaymmwrhlwzi80xe4mmpdppm2adg
+  a. https://w3-03.ibm.com/finance/access/home.wss
+  b. (right) request access or https://w3-03.ibm.com/finance/access/accessRequestSearchApplication.wss
+  c. By application name , d. input 'saleforce'
+2.a. check request status: http://w3-03.ibm.com/finance/access/login.wss
+  
+3. usage : C:\AAWork\My Documents\team materials for intern\2017 SSR Internship\SalesForce系统介绍
+and https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Salesforce%20TSS%20L1
+
+4. asking SF administrator help :
+a. https://help.salesforce.com/home    , login
+b. click 'Request Admin Assist' (右下角)
+c. after fill up requirement, a case is created and send email to you
+
+5. ask SF admin to do something：
+a. https://ibmsf.force.com/internal/s/
+b. click 'CASE' option
+c. create a CASE
+or send email to   mysphelp@us.ibm.com
+
+有时view看不到case了，是由于temprary add duty manager：主菜单上的 chatter -》request duty manager
+------------------------------------------------------------------------------------------------------------------------------------------------------
+add APAR number in a case:
+At the side of ARM of a case in SF（即主功能单上，选择ARM旁的下拉菜单）, select 'add known issue' -> Lagacy Defect -> APAR, search 地方输入APAR号，会自动出现一个DTxxx的值，选择它并 点击 SAVE 
+在case的Defects 地方出现apar 
+如果没有出现DTxxxx的值，就点击 ‘create new',选择'lagacy defect'然后 save，会生成一个DTxxxx的值，供以后用。
+
+我的MultiCloud_Process_Update_Sep2021-lyj.ppt 有详细介绍。
+-----------------------------------------------------------------------------------------------
+ https://www.youracclaim.com/user/ying-jian-liu   : email: liuyingj@cn.ibm.com , pass: p to u
+earn badge
+-----------------------------------------------------------------------------------------------
+
+https://w3-connections.ibm.com/forums/html/topic?id=68ba02a5-2823-4e04-941b-536baf49a0dd&ps=25
+or 
+https://w3-connections.ibm.com/wikis/home?lang=zh-cn#!/wiki/WASIHS/page/Browser%20Plug-in%20extension%20for%20Salesforce
+OR
+https://bhi.rtp.raleigh.ibm.com/ibmsfextras/index.html
+OR
+
+分别是Firefox和chorme的插件：
+https://addons.mozilla.org/en-US/firefox/addon/ibm-salesforce-extras/  |  https://chrome.google.com/webstore/detail/ibm-salesforce-extras/gpmkkenlhceokknfjgfkmlgaeljnhnkp
+增加一个插件，使得case 显示颜色 （extension)
+（For questions or suggestions, reach out in the #ibmsfextras Slack channel, or open an issue on GitHub: https://github.ibm.com/WCSupport/IBMSFExtras（
+
+对于chrome: 打开 chrome://flags/#extensions-on-chrome-urls，找到（ Ctrl + F ）#extensions-on-chrome-urls 那一选项，然后改为 Enable，重启以后
+可以在扩展程序页面（ chrome://extensions ）拖进去一个 crx 扩展来安装。
+(https://www.chromefor.com/not-chrome-market-extensions-deal/)
+
+最新：按照文档做就可以了，都已经加到chrome store或者fire store中了，直接点击添加extend即可，不用下载ctx 再添加。
+
+*************************************************************************************************
+which defines the customer roles and responsibilities  which include gathering data required so IBM may resolve the issue.               
+
+http://www-304.ibm.com/support/customercare/sas/f/handbook/home.html
+*************************************************************************************************
+http://www.ibm.com/planetwide/cn/
+China Technical Support  phones
+************************************************************************************************
+kunteng:kun teng: 昆腾: quantum
+
+http://www.quantum.com/swcompguide.aspx
+
+******************************************************************************************************
+2022-2 migrate to outlook :
+1. notes server: 
+Mail@IBM Global Domino server info
+Server name:MWW0391/01/M/IBM
+File path:mail/1/7/liuyingj-672.nsf
+Email address:liuyingj@cn.ibm.com
+User name:Ying Jian Liu/China/IBM
+
+2. archive files : 
+/Users/liuyingjian/library/Application Support/HCL Notes Data/archive
+(2010-07.nsf	2012-12-21.nsf	2016-2022.nsf	a_liuyin.nsf	l_liuyin.nsf)
+
+3. other account: outlook -> preference -> account -> + 
+
+
+Notes 的桌面图标复制：到notes data目录下（c:\notes\data 或者 finder->文稿->IBM Notes data) copy
+desktop8.ndk 替换到当前使用的。
+
+notes db 加密：
+选择要加密的DB(可以在NOTES的tools-》archive 打开，也可以从磁盘上找到相应的nsf文件，用NOTES打开）
+菜单上，文件（file）-》应用程序-》属性-》加密设置
+
+（点击：db属性，右键，加密。）
+---------------------------------------------------------------------------------------
+升级notes client 到8.5.3后，没法选择打勾 ：
+在notes的菜单中 “文件” -》首选项 -》基本NOTES 客户端配置-》右边其他选项 -》在页边为所选文档显示复选标记。
+
+**********************************************************************************
+mouse : control panel -> eltrnav -> touchpad  (disable) 
+*************************************************************************************************************
+training :
+请您登陆IBM中国渠道大学远程学习平台（http://www.smartercu.com），
+点击“我的中心”-->“我的课程”(查找CE Code：ST163009“ SPSS 行业应用场景案例与新版本功能”) 点击课程名称，开始学习。
+
+用户名： liuyingj@cn.ibm.com, pass: p to u
+-----------------------------------------------trainning & badge --------------------
+Acclaim : https://www.youracclaim.com/earner/earned   | liuyingj@cn.ibm.com | p to u
+如何得到badge，比如学习完了 https://courses.cognitiveclass.ai/courses/course-v1:developerWorks+BC0101EN+v1/course/
+选择 completion certificate and badge -> badge -> Get your badge
+
+有问题问cclaim的人 ：  不管有。
+到yourlearning 中 https://yourlearning.ibm.com/search/badges ，？号处有 'chat with us'显示机器人答复，当回答说不满意后，live agent 出现，是真人交流。
+
+************************************************************************************
+win7 / windows 7  更改快捷键
+
+http://wenku.baidu.com/view/fdd81c265901020207409c1a.html
+
+目前，将全角/半角的切换快捷键改成 alt+3
+
+<windows> + R : psr.exe : 录屏，点击鼠标一次，截屏一次。
+<windows> + L : lock windows
+
+************************************************************************************
+remove service/ clean service / clear service / create service / add service / sc query
+
+sc delete 服务名
+例如：
+sc delete 6to4
+
+C:\Documents and Settings\Administrator>sc  create "TSM StorageAgent1" binPath=
+"D:\Program Files\Tivoli\TSM\storageagent\dsmsta.exe"
+[SC] CreateService SUCCESS
+注意：binpath= 后要有一个空格，否则不对。
+
+*************************************************************************************
+新的iNotes （webnotes/ verse ) 的地址：  https://d01ml007.pok.ibm.com   and enter your w3id and password.
+help : https://w3.ibm.com/help/#/article/12837
+
+MACOS change DNS:用nslookup url_address 查看： IBM DNS: 9.0.148.50 or (9.30.99.252) (系统，网络，高级，DNS，移动的DNS：192.168.1.1)
+*******************************************************************************************
+用firefox 到http://w3-01.ibm.com/download/standardsoftware/PC/lang_en/issiCatalogPC.html 上下载安装
+Microsoft Office 365 ProPlus (Office@IBM) ，安装后，
+然后打开excel，从上excel option-》language 点击，到 
+https://support.office.com/en-us/article/Language-Accessory-Pack-for-Office-82ee1236-0f9a-45ee-9c72-05b026ee809f?ui=en-US&rs=en-001&ad=US
+下载32bit安装中文包
+*******************************************************************************************
+word 使用： 数据-》筛选
+
+I change workview/xlview under C:\Program Files\Microsoft Office\OFFICE11
+ppview.exe under C:\Program Files\Microsoft Office\Office12 
+so that *view take not effection.
+****************************************************************************************
+
+*****************************************************************************************
+IBM nco help  remote control tools : IBM ayudame
+windows 开始，搜索：ayu
+
+8008101188 or  ( 86 ) 1354-3348-880. (urgent)
+------------------------------------------------------------------------------------------
+其他国家的service ： https://www.ibm.com/planetwide/
+-------------------------------------------------------------------------------------
+ibm.8008101818@163.com   (p0o9i87u) : tivoliibm@163.com  (tivoli)
+team mail backup : gcgtivoli@163.com  (tivoligcg) : 验证手机：13801200804 (service pass: 800810)
+tivoli_support@mainz.ibm.com : tivoli QQ: 1460789205@qq.com : pass: tivoli8008101818 : tivoli800@qq.com
+(注册过 北工大的校园网 ：http://www.bjutedu.net/thread-2852-1-1.html）
+customer complaint: (no phone number) : https://www-31.ibm.com/cn/complaint/
+-------------------------------------------------------------------
+-----------------------------------------------------------------------
+Retain:  p: wtti o14/11/11
+---------------------------------------------------------------------------------
+
+禁止谷歌chrome浏览器 标签页自动刷新
+最近发现打开多个页签后，重新去点击某个已打开的页签时会自动刷新
+最新版谷歌浏览器默认开启了「自动舍弃标签页」功能，用于解决Chrome浏览器占用内存过大的问题。
+ 
+解决办法：
+1 在地址栏输入 chrome://flags，进入实验功能设置页面
+2 【CTRL+F】快捷键 搜寻discarding
+3 找到「自动舍弃标签页」功能，选择「已停用」即可
+4 重启浏览器
+------------------------------------------------------------------------------------------------------------------------------
+设置chrome 同步 （tongbu)（其实是将主computer上的书签保存到google上：
+1. https://www.google.com/settings/chrome/sync
+2. 重置同步
+3. 会将google 上保存的数据删除
+4. 编辑好标签等
+5. 重新登录chrome://settings/， 登录chrome,点击“高级同步设置” ， 自动做同步
+6. chrome://settings/，点击“取消与您的google账户关联“。
+--------------------------------------------------------------------------------------------
+Unicode (HEX)     UTF-8 (Binary)
+0000 - 007F       0xxxxxxx
+0080 - 07FF       110xxxxx 10xxxxxx
+0800 - FFFF       1110xxxx 10xxxxxx 10xxxxxx 
+-------------------------------------------------
+U-00000000 - U-0000007F:   0xxxxxxx
+U-00000080 - U-000007FF:   110xxxxx 10xxxxxx
+U-00000800 - U-0000FFFF:   1110xxxx 10xxxxxx 10xxxxxx
+U-00010000 - U-001FFFFF:   11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+U-00200000 - U-03FFFFFF:   111110xx 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx
+U-04000000 - U-7FFFFFFF:   1111110x 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx
+
+例如：
+从unicode 汉字编码:
+http://www.18839.com/Edu/A07/7008/20090403239886.html
+知道：
+刘：5218（0101 0010 0001 1000),它在第三行范围，从‘刘’的最后一个二进制位开始，依次从后向前填入格式中的x，多出位补0. (由于x有16个，其实就是从左到右填入即可）。所以‘刘’的UTF-8编码是 
+1110xxxx 10xxxxxx 10xxxxxx
+11100101 10001000 10011000, 换成16进制是 E58898
+(从http://www.falconhan.com/tools/utf8-conv.aspx 可以验证)
+
+unicode是工业标准，utf-8是其中的一种实现方法。
+utf-8的头识别标志是 EF BB BF，然后是汉字编码，对汉字是3字节显示，GBK是2字节显示(在notepad上的ANSI来存储方式），
+头标准：0xFF 0xFE，是UTF16 小端(notepad的unicode存储方式），如果是0xFE 0xFF则UTF16 大端。
+可以用notepad++ 的插件中hex-editor来看。
+或者，从http://blog.csdn.net/lintax/article/details/51923944 查出所有汉字的utf-8和GBK的编码表。
+
+乱码识别：
+在notepad上写“三”，用ANSI保存，在用notepad++的"编码"->UTF-8显示后，则显示出“xC8xFD“，经http://blog.csdn.net/lintax/article/details/51923944 查询是GBK的”三“
+而当在notepad上的”三“，用UTF-8保存，然后在notepad++上用ANSI编码显示后，则出现”涓?口“，再经过”插件“->HEX后显示E4B8B9，查询得到是UTF-8的”三“
+
+
+***************************************************************************************
+windwos service: c:\msconfig
+windows remote destop: c:\mstsc
+----------------------------------------------
+symphony : regedit : hkcu->software->microsoft->windows->currentversion->RUN
+name:SymphonyPreLoad
+type: REG_SZ
+value: "C:\Program Files (x86)\IBM\Lotus\Symphony\framework\shared\eclipse\plugins\com.ibm.symphony.standard.launcher.win32.x86_3.0.0.20101015-2340\IBM Lotus Symphony" -nogui -nosplash
+***************************************************************************************
+FileNet Support
+Tel: 800-810-5122
+
+Cognos Software Support
+Toll Free (North China): 10800-610-0409
+Toll Free (South China): 10800-261-0417
+
+IBM DMS Softek Support
+Toll Free: 800-810-1818-5174
+***************************************************************** crisits, crisit ****************
+Wen Ying Cao: 
+http://w3.ibm.com/ibm/resource/How_to_register_client_situation.html
+http://w3.ibm.com/ibm/resource/MTS_Complaint_Proactive_Apply_Guide.html
+
+New Sametime Group
+Search for public group
+"search group name": TSM OneTeam - Support
+
+sametime: notification -> 选择 one on one chat -> 列出的菜单里，checkout 'Bring chat window to front'
+--------------------------------------------------------------------------------------
+Hello,
+You can visit this web addr below, in this web address, there are 2 items. Item1 is guide for register, item2 is the web link to log this situation.
+after finishing and submit, you will get a automail about this Situation (number), CoE team (Brisbane, Australia)will be as RO to take the case on Office Hour((9:00AM-5:30PM)and help to handle the case.
+
+CoE contact((9:00AM-5:30PM): 
+Northern China：	10800 610 0436
+Southern China：	10800 261 1325   
+
+Item 1.Guide:  http://w3.ibm.com/articles/downloads/ppt/How_to_register_client_situation.ppt
+Item2.Web link: http://w3-01.ibm.com/tools/complaints/cmtweb/cgi-bin/login.cgi
+
+****************************************** some of questions for performance problem ************************
+问题概述：简要描述什么产品遇到什么异常情况?
+详细问题描述：?回答以下问题（如果适合）
+发生什么问题？
+什么产品？产品的名称和版本
+如何发现的问题？（如果是通过命令或截图，请把命令和截图附上）
+什么时候第一次发现的问题？
+以前有没有发生过同样的问题？
+发生问题后还又发生过吗？
+问题发生有什么规律吗？
+发生问题时做过变更吗？有的话做的什么变更
+有多少机器有这样的问题？
+是不是第一次安装？
+产品安装在什么操作系统上？操作系统版本？
+对于ITM产品，被监控对象有什么表现？被监控对象是否开了PMR，做了什么分析？（比如ITM for WAS，发现WAS特别慢，怀疑是ITM的问题。停止ITM后WAS不再慢。那是否请WAS方面查看WAS日志里发现什么问题）
+
+English:
+When the problem had occurred firstly ?
+Has the problem had in previous ?
+How many time the problem occurred ?
+Were any rules ?
+What have you done before the issue occurred ?
+if yes, what has done ?
+---------------------------------------------------------------------------------------------
+***********************************************************************************************
+IBM Value:成就客户、创新为要、诚信负责
+***********************************************************************************************
+7360  mail box  （语音信箱）
+
+在CMS中如果合同号中为PSS开头的就是有现场服务，否则就是没有。或
+Entitlement Type: SW PPA    就是　没有现场服务，ESPA就是有。
+
+to visit google : proxy : 
+1. hkce01.hk.ibm.com   8080
+or
+2. proxy.au.ibm.com:8080  : 
+
+nslookup IP / ipcofig -a
+
+----------------------------------------------------PPA example -----------------------------------
+
+(用户名：wushili@xuanyuan.com.cn  密码：wushili12345)
+
+如果是BP（business partnet）， 访问
+https://www-304.ibm.com/partnerworld/partnertools/eorderweb/ordersw.do
+键入：IBMID，password，进入： 软件访问目录
+点击：我同意，进入： Software Access Catalog Downloads
+在“Find by part number” 处键入产品的part number   或者
+在“FInd by search text” 处键入产品关键字， 查询出需要的产品。
+或者在左边的菜单里选择：Popular downloads 或者 Obsolete software
+
+******************************************************************************************************
+----------------------------------------------------------------------------------------------------------------------
+IBM EOS 产品对bundle的产品的support 情况：
+1. http://www-01.ibm.com/software/support/lifecycle/faq.html
+Q: Are components of a bundle included in the new initiative?
+A: Yes, support is available for all IBM components of a product or until the product or bundle is withdrawn from support. I
+n addition, all components of a bundle have a common EOS date.
+
+2. 更详细的说明：http://www-01.ibm.com/support/docview.wss?uid=swg21997941
+总的来说： 只要产品support，其bundle的所有产品都support，但是只能在产品的team中best effort support，bundle 产品team不support了。
+
+************************************remote session ******************************************************
+remote access session: my webex : mywebex
+1. webex : https://ibm.webex.com/meet/liuyingj
+Host PIN: 8567
+
+中国大陆地区的 Webex 会议电话拨入号码已经更换，请您启用新的号码 400-820-2855；现行 Webex 会议拨入号码 400-120-4798 将于2021年3月18日起停止服务。
+请您及时更新 Notes 日程中的 Webex 会议拨入号码或手机通讯录；全球 Webex 呼入号码请参考列表：http://ibm.biz/WebexGlobalCallNumbers
+
+建议您优先使用电脑接入Webex 会议语音 (Use computer audio)，这种方式最便捷并节省费用。
+您可以加入 Slack@IBM channel #webex-at-ibm 寻求帮助；当遇到问题时，也欢迎您及时拨打我们的 Helpdesk 热线电话：
+中国大陆热线：800-810-1188 (固话)  400-670-2255 (手机)
+香港热线：2825-6001    /  台湾热线：8723-8888
+
+Webex Meetings 环境中 : 请尽量使用 Call Using Computer.  如确需使用 IBM 办公室电话做为语音接入, 请拨打 *321 ( 电话的最佳方式 ), 而避免采用 Call Me. 
+点击左上角 ！图标，可列出电话或ID。
+
+(webex frozing:
+设置->安全性与隐私->防火墙->防火墙选项（需解锁左下角:unlock:后可访问）->清除启用隐身模式的勾选)
+
+具体使用情境，参考本目录下的截图（webex使用总结.jpg）
+
+(1a. Others webex: https://ibm.webex.com/meet/prabraha )
+2. https://stmeetings.na.collabserv.com/stmeetings/room/join/access?id=9527-2196  (用firefox，而且作为host，来share 屏幕给其他人)
+如果要remote access，让对方给你  https://stmeetings.na.collabserv.com 看到的 ‘host meeting’的URL。
+(or: https://apps.na.collabserv.com/homepage/web/updates/#myStream/imFollowing/all : right host meeting)
+3. QQ
+4. teamviewer: 在win7上的会在C:\Users\IBM_ADMIN\AppData\LocalLow\Temp 等下面还有，可以用adminstrator用户打开cmd，dir /s teamviewer.exe 查找
+然后直接键入地址进入目录，然后删除。
+5. mstsc
+
+AOS (assistant On site) remote on-site by l2 : https://broker.gotoassist.com/h/ibm?Question=DR1831550
+see :   http://www.ibm.com/software/support/assistonsite
+登录成功上去，L2可以操作整个机器了。
+
+ID	liuyingj@cn.ibm.com
+pw:   p0o9i87u
+
+(old: PW	1234qwer)
+
+manual: http://www-900.ibm.com/cn/support/faqhtmlfaq/1897669B16001.htm
+
+URL: http://www-01.ibm.com/support/assistonsite/form1.html
+enter connect code
+
+apply user: after wang jun approve, forward it to Peter SM Lam/Hong Kong/IBM@IBMHK 
+cc to Electronic Service/Rochester/IBM@IBMUS
+**********************************************************************************************
+http://www.ibm.com/support/alerts/software/us/  Software products impacted by Daylight Saving Time in 2007
+**********************************************************************************************
+lagacy IBM printer: http://w3-03.ibm.com/tools/print/index.html
+clould printer: http://w3.ibm.com/tools/print -> click 'Install ECPrint software'
+安装软件后，到打印机处登记badge，第一次，放入badge，输入intranetid和password，其中数字要用右边小键盘输入。
+注册badge后，每次刷一下badge，就login了。然后选择要打印的文档。打印结束后要按登出键。
+***********************************************************************************************
+http://d25dbw26.mkm.can.ibm.com/wwqa/wwqades.nsf/wwqaHome?OpenForm  : search long pending pmr
+***********************************************************************************************
+www.163.com  mail: user: tscswibm , password:tsc2k5sw
+http://mail.163.com/   : tscswibm@163.com
+**********************************************************************************************
+IBM : MS office for XP : word, excel,ppt: link for old user:
+http://w3-1.ibm.com/download/standardsoftware/win/msoxps20sc/msoxps20sc.html
+**********************************************************************************************
+---(in used) --(old: ER enhancement request)-----------------
+Once you raised the RFE, you can follow the RFE status with the following link,  
+                                                        
+http://www.ibm.com/developerworks/rfe/execute?use_case=changeRequestLanding                                                                      
+
+and you should contact development team, Support team will not responsible for this, so please follow the RFE procedure and         
+send me the consent to close the PMR.       
+    
+submit RFE
+http://www.ibm.com/developerworks/rfe/execute?use_case=submitRfe
+----------------------old ----------------------------------------------------------------------
+Created FITS document MR1206054012 to document request: ER(enhancement require)是 在FITS库中添加
+用户所需要的新功能，提交上去就可以了，做不做由实验室决定，做好了可能在一下个版本中发布，它与PTFs不一样。
+
+The enhancement that you have requested "to remove the old date/time 
+message in AEL" has been logged into the IBM Tivoli enhancement      
+database, FITS (Fully Integrated Tool Set).                          
+The FITS number for your enhancement request is <MR0408096348>.      
+***********************************************************************************************
+**************************************
+WAS 只是自带 TIVOLI IDS服务
+*************************************************** words , term ***********************************************
+ccwcc : Closing call with customer concurrence
+ccwcc : closing ........           consent 
+
+Customer provided approval to close pmr.  
+
+CHARGEBACK 中文应该叫退单， 退货
+
+preference : 首选项
+
+Now has there been any change on the Windows machine where the S&Y agent was installed?
+
+Also is this a new installation or an old installation of the S&Y agent?
+
+I've got some preliminary findings.
+
+Thank you for your comments on IBM Knowledge Center.  
+To better understand the issue can I ask you for more information? 
+Where is the PDF icon you are describing?  
+Maybe a screen capture would help. 
+
+
+ACTION TAKEN: Acknowledge reception of feedback.
+ACTION PLAN: Hold for the engineer to review    
+
+thank you. please let me know if you need any additional assistance.
+
+Sending 1st follow-up email to ascertain current status of this issue
+
+
+I was away for a week on vacation
+have a meeting
+.
+This is to acknowledge receipt of your logs.
+We will be forwarding the logs to L3 for review.
+Will get back to you as soon as soon as we receive a response back from them.
+.
+
+rendering report
+intermittent : adj.间歇的, 断断续续的 (wrong: intemintt)
+spin off from 36108,000,672
+Starting with : 自。。始
+
+or else: 否则
+data available up to June 23rd
+
+call customer, but subscriber has not answer. 
+
+update pmr : Review the problem and update Customer afterward
+
+we go on vacations
+Pls call in meeting 5m ahead of schedule
+
+all news reports should be in accordance with news releases from Xinhua
+                  
+一旦：ONCE , 万一：in case , 即使：even if , such as, refer to as, with problem 1(不是For　PROBLEM　1）, 
+reduce to s2p2, upgrade , discrepancy
+只要,在。。。时候　：As long as , 既然：　now that , moreover:此外。conj. 再者,加之,而且 。afterwards: 然后，后来。
+whereas : 尽管
+despite this
+
+as to why  至于为何...
+He deserves it : 他当之无愧。
+
+I was wondering if you have any update on this PMR.
+
+因此,所以：therefore
+
+remove the *  leading asterisk (*)
+
+was eligible for | mandatory
+
+i.e. :即，也就是说，  e.g.举例
+
+likewise:也同样。
+Mentors can assess the skills of the potential protege candidates and likewise the proteges can view the professional bios which will help them to choose the proper mentor
+
+request ID and xxx is the desired label name
+
+Thank you for completing this survey. We appreciate and value your input
+
+is an IBM company designated holiday in China
+
+where n is the :其中n是
+
+a single line of text that starts with aaa
+
+We have received very positive feedback on the first two
+
+
+problematic box
+Did you observe any specific pattern of crash occurrence?
+
+You may have seen or heard of a potential problem with certain lithium-ion batteries manufactured by Sony Corporation.
+
+can take up to 20 Mitues , as far as
+
+would like to 
+appropriate command
+
+Apologies if this is a duplicate.
+We are rapidly approaching March 1st,
+
+
+since they suspect but are not sure 
+
+Sorry for the delay in getting this information for you.
+
+fully understand the problem scenario
+
+My answer below in blue.
+
+I am concerned about the impact on customer satsifaction.  
+
+cumulative fix
+
+Add a servername stanza
+
+garbles DBCS message
+
+as I know, at that monment
+
+As I mentioned in my previous update, there is no way for us to recreate 
+the issue unless there is a solid reproducible scenario. This problem    
+happens every once in a great while over the product lifetime and we     
+have not been able to figure out what the problem is because there is no 
+way to reproduce consistently.                                           
+
+
+The reason for this behaviour is that
+
+For example, suppose that you want to reclaim the volumes from two sequential storage pools simultaneously and that all storage pools involved have the same device class.
+Specifies the amount of time, in hours, to keep a closed event in the event cache. The default value is 24 hours.
+specified number of reclamation processes regardless of the number of volumes
+
+this rule is not applicable to
+does not make any sense
+Thanks for your kind reminder
+thanks for the help
+thanks for the support
+Nobody but Development will be able to solve this
+
+The PMR was passed to the L3 team and they are currently investigating the
+problem. Once we have further value to add you will be informed
+
+Has this ever worked
+whereas  , even if
+in regards to the problem 
+
+your help would be much appreciated
+
+
+pls compliance
+As we discussed on todays conference call
+
+TEMS , OMEGAMON Equivalent : CMS
+CNPS is Roughly equivalent to the ITM Web Health Console Server
+
+You can specify multiple event server names as a comma-delimited list. 
+
+working as designed
+which of the following actions can the user SMITH perform?
+
+After which, you may access xxxx
+Once there
+
+such that : will provide information on process ID such that we can cancel xxxx
+
+still the problem persist
+it is just common sense
+This is a courtesy reminder that
+
+first of all I do apologize for the delay in replying. 
+
+If your response if No, then indicate actions you are taking to be support ready.
+
+This is a gentle reminder
+I have no idea   what "transport" is  nor how  to set it.
+
+open a PMR to address this problem
+i see no (solid) evidence to suggest that SANergy is the problem
+
+I will be out of the office starting  07/20/2005 and will not return until 07/25/2005.
+
+dsmXXX apis are non-unicode apis while tsmXXX are unicode apis
+
+As previously mentioned,
+Data that is collected by the agents is sent to a central repository called the Candle management server.
+
+the Labs may not be able to provide a hard date for the release of the fix, we will be able to get a date for when they can commit. 
+
+Please free feel to let me know if you have any additional questions or concerns.
+
+what's the root cause?
+Sorry for reply late
+Thanks again for your precious cooperation and for your patience
+I have some exciting news to share with you
+
+It's not Omegamon's fault to reserve the volume
+
+I will be out of the office starting  10/04/2005 and will not return until 18/04/2005.
+
+make a test
+even if it does 
+is still in 
+he's not in right now , would you like to leave a message?
+
+Your satisfaction is important to us, and we thank you for taking the time to respond.
+
+I am afraid
+To solve this problem:  I like to  
+sorry for the inconvenience
+           
+would like to
+
+spans a year
+
+has been newly added
+
+whether
+
+our mail file size is approaching your capping threshold.
+
+Any suggestion from you is appreciated.
+If you experience any issues with your order,
+
+a library's volume inventory includes only those volumes that have been check in the library
+
+i take a quick look
+
+Thank  you for contacting ESR HELP DESK.
+Should you need further assistance, please do not hesitate to contact us. 
+
+keep an eye on
+
+PD/PSI : Problem determination (PD) and Problem source identification (PSI)
+
+clarify
+we will investigate further.
+
+recur / repro / circs / phenomena /symptom
+
+please have the customer run the following:
+
+the customer should be able to checkin or checkout tapes as necessary.
+
+If above information is not enough, please feel free to contact
+
+I am sorry that cannot take your call as it is holiday in HK. 
+
+I did a rough count and there are between 50 and 60
+
+Gather Relevant Diagnostic Information (if possible):
+
+IF stand for Interim Fix
+
+---------------------------------------------------------------------------------------------------------
+
+************************************************************************************************
+I will be out of the office starting  20/04/2005 and will not return until 02/05/2005.
+I will take annual leaves from April 20.  I will attend Storage Summit during April 25-29.
+I will respond to your email on the same day.  For anything urgent, just call 61-421058695
+***********************************************************************************************
+***************************************************************************************************
+notes有时打开窗口错，有时用ZAP NOTE不管用，在进程列表中将N开头(尤其NLSNOTE， NTTASK，NFTAK。。)删除掉即可，
+NOTES 菜单变成中文或英文：file->perference->user perference -> international->最下面interface
+邮件上的连接，不可能直接打开，报wen nevigator没关联　　－＞右下角场所－＞编辑当前场所－＞internnet浏览器
+
+按<tab>+ALT 或 <tab> 切换到下一邮件，在‘文件’-》首选项-》基本notes客户端配置-》其他选项-》使用TAB。。。
+勾选上。重启notes。
+*****************************************************************************************************
+duty professional:如果出现日期不对，则改区域选项中的日期格式成yyyy-mm-dd，然后重新启动NOTES，才生效。
+************************************************************************************************************
+duty list: new team room -> resource availability -> 左下 -> SSS 
+************************************************************************************************************
+如果某个数据库打不开(如本地：extserver2),则在windows/system32/driver/etc/hosts文件中加上这个地址。
+***********************************************************************************************************
+help 看 WINDOWS 的错误号如67，c:\> net helpmsg 67 
+code page: 看WINDOWS当前代码页：c:> chcp
+解.taz 文件在AIX下，zcat filename.taz | tar xvf -    , in windows, use winrar
+
+@ECHO OFF
+XCOPY C:\AUTOEXEC.BAT D:\
+IF ERRORLEVEL 1 ECHO 文件拷贝失败
+IF ERRORLEVEL 0 ECHO 成功拷贝文件 
+***************************************************************************************************
+fat32->NTFS : convert
+***************************************************************************************************
+添加　打印机：http://w3.ibm.com/tools/print
+****************************************************utf8***********************************************
+garble: 如果得到的LOG中有乱码：可用ultraedit 来转换：选择　文件－＞转换－＞utf-8 : ASCII
+***************************************************************************************************
+转换：transafer: big5 - simply chinese : tradtion chinese / simply chinese : tool : ConvertZ.exe
+tradition chinese code:  converz.exe  本目录的子目录中有.
+*****************************************************************************************
+tie line:11900+extend number
+*****************************************************************************************
+***************************************************************************************thunder
+WST中报FIREWALL没有启动，在服务列表内启动：TrueVector Internet Monitor， 如果暂时不能启动，应该先将
+zone labs integrity client (新版本为check point integrity client (service列表中没有，要在开始->所有程序->ZONE LAB: shut down掉后再启动。
+
+下载软件造成：
+wst 如果PTOP软件卸载后还有问题，则c:\program files\C4ebreg 删除所有.csv的EXCELL文件，然后再RUN　wst，多RUN几次。
+                              (win7 : c:\program files(x86)\C4ebreg
+
+可用VNC.exe的来登录用户机器，只要他打开端口，但这时我需要启动ZONE LAB INTEGRITY CLIENT，否则登录不上去。
+也可用QQ来访问用户机器。
+
+开始->所有程序 : checkpoint point integrity client 
+
+如果zone labs integrity client有错误，可在w3.ibm.com -> essential links -> http://w3-1.ibm.com/download/standardsoftware/  -> http://w3-1.ibm.com/download/standardsoftware/ap.html
+windows xp -> Client for e-business -> CheckPoint Integrity Flex (CPIF) v6.0.202 with the 28 Mar 2006 IBM Base Policy 
+
+.gz file: gzip -d filename.gz or  gunzip filename.gz
+如果报File too large ,则用 gzip -cd *.tar.gz | tar -xvf -    来做
+.tar file commpress to .gz : gzip zzz.tar
+zcat 3.0.0-TIV-OMXEDUD-IF0028.tar.Z | tar xvf -	32 bit
+zcat 3.0.0-TIV-OMXEDUD-IF0029.tar.Z | tar xvf -	64 bit
+
+zcat snap.pax.Z | pax -rvf -   (extract file)
+zcat snap.pax.Z | pax -vf  -  (table content only)
+
+gzip -dc xxx.pax.gz | pax -rvf
+
+.Z file using gunzip.
+ftp -i ip_address 之后可用mput命令(即进入非交互方式)
+
+
+压缩工具 文件扩展名 	解压工具
+gzip 	  .gz 	        gunzip       (gunzip xxxxx.gz)
+bzip2     .bz2   	bunzip2
+zip 	  .zip  	unzip
+
+if .zip file is too large (11G), then use 'jar' to unzip it:
+
+/opt/IBM/WebSphere/AppServer/java/bin/jar -xvf DB2SAP_TestDrive_V95_091231.zip
+
+bzip2 -dc aaa.bff.bz2 | restore -xqvf
+bzip2 -dc aaa.bff.bz2 | RESTORE -Tqvf
+
+ar.gz 是linux和unix下面比较常用的格式，“7-ZIP”这个软件可以很方便地解决这个问题。
+
+具体步骤如下：
+一、安装7-ZIP以后，直接在你想要打包的文件上点右键菜单，会有一个7-ZIP的子菜单栏，类似WinRAR和WinZIP的那种右键
+菜单。然后选 “7-ZIP”->“添加到压缩档案”，在弹出来的窗口里有个“压缩格式”的选项，里面并没有tar.gz格式，
+没关系，里面有一个Tar格式，第一步就是要先压成tar格式。
+
+二、成功打包为Tar文件后，你可能会发现这个tar文件包和原来的文件大小一样，也就是说tar本身并没有压缩，
+而是仅仅把它们打包成一个单独的Tar文件。所以需要做第二步，再在这个tar文件上面点右键，
+选“7-ZIP”->“添加到压缩档案”，这时候弹出的窗口里再看“压缩格式选项”，发现多了两个刚才没有的，其中就包括“GZip”，是的，这一步就是把tar文件继续压缩成GZip。选择“GZip” 格式后确定，最后结果就是一个新的tar.gz格式的文件。
+
+errpt2wide errpt.out  ( show title of each errpt)
+cat errpt.out
+
+
+tar -czf aaa.tar.gz  ./aaa/  
+将 ./aaa 目录下文件和所有子目录及其文件打成 .gz 的包，
+可以用 gzip -d aaa.tar.gz 解压成 aaa.tar 文件包。
+
+------------------------------------------------------------------------------------------------------
+
+putty: stty erase <backupspace> : <backupspace>是ENTER一下backupspace键 , 也可用control h 来做
+
+ftp: prompt off -> mget * 就不用回答Y了
+smitty fs -> select Gbyte and fill [+1] (用control M来删除字符）即是扩一个G。
+
+
+在AIX下可以采用adb,dbx工具分析core
+(https://www.ibm.com/developerworks/cn/aix/library/0806_chench_core/ , 即使用snapcore得到日志，也要单独用dbx命令分析）
+在Linux下可以采用gdb工具分析core
+
+在安装WINDOWS　2002　OFFICE　STANDARD　EDITION　SP3时报268错，是由于要新安装一下ISSI。
+打nco ibm help desk
+
+如果安装产品时，不是运行而总是要下载WEBPRMPT.PL，则，用IE登陆ISSI,看"SETUP"一节，重新安装ISSi。
+（issi ：http://w3-01.ibm.com/download/standardsoftware/apwxp.html）
+old: ISSI: win7 : http://w3-01.ibm.com/download/standardsoftware/apw7x.html
+现在不用安装ISSI，要用firefox 下载，自动安装。chrome不行。
+
+
+从aix 5.4 ML04 以后，MLxxx 改成 TLxxx
+
+netgear,如果单用无线，在家无法上网，只能通过AT&T来上，那是因为在IPCONFIG中看到
+Ethernet adapter VMware Network Adapter VMnet8及Ethernet adapter VMware Network Adapter VMnet1
+在生效，禁用它们即可,如果还是不行， 先启用一次，再禁用即可。
+
+如果有线不能上网，1. 禁用vnet8，vnet1的网卡，2， 启用有线的ipv6。
+
+二台机器无法PING 及 http，C:\Program Files\AT&T Network Client\NetFW.exe,设置turn off 。
+如果在A机访问B机，则要设B机上的NETFW.EXE
+
+当用TIINKVANTAGE是，报bios中设置了radio off，而BIOs中没有，是在机器正面边缘下方有一个 左右 的开关，
+打开即可。
+
+
+在linux下，用md5sum命令就行。windows下得专门去下载一个算md5吗的软件:winmd5.exe 在d:\downloads下有
+
+http://softbbs.pconline.com.cn/topic.jsp?tid=6466638
+如何用 GHOST来备份恢复系统
+
+
+安装RETAIN 后，所有的网络都没有了，这需要在‘设备管理’中，将NIC 设备DELETE, 在扫描硬件，找回来NIC，即可。
+----------------------------------------------------------------------------------------------------
+new issi: http://w3-01.ibm.com/download/standardsoftware/PC/lang_en/issiCatalogPC.html
+----------------------------------------------------------------------------------------------------
+change wireless password:  (过时了，现在用证书方法：不用改密码
+https://ibmca-wireless.innovate.ibm.com/ibmca-wireless/view/automaticSetup.do ）
+选自动模式，输入approve code，如果选手动更新，下载code和一个证书，再更新证书，手动更新方法参考：
+https://w3.ibm.com/help/#/article/renew_digcert/request_new_certificate
+
+https://daymvs1.pok.ibm.com/ibmca-wireless/view/welcome.do
+Automatic Setup， 点击‘request IBM wireless access’，然后按照步骤会得到一个approval code，输入code即可。
+
+证书密码：dec12twe
+目前的方法，有线和无线没有优先级，所以，要用有线，可以先禁用掉无线，所以，以后用无线，要先在控制面板->网络和共享中心 启用无线网络
+
+2016-9-5 : 证书密码：aug08eig  (C:\Users\IBM_ADMIN\Downloads\liuyingj_1394534056.p12)
+
+查看历史信息： https://daymvs1.pok.ibm.com/ibmca-wireless/view/certificates.do
+
+----------------------------------------------------
+https://daymvs1.pok.ibm.com/ibmca-wireless/view/welcome.do
+Automatic Setup
+
+https://w3-01.ibm.com/helpcentral/Content/View/3506996f-9336-45ba-9b3d-b87ac5dc0db3/a
+IBM wireless LAN-overview
+----------------------------------------------------
+
+change wireless password:  (过时了，现在用证书方法：不用改密码
+
+https://w3.ibm.com/help/#/article/install_digicert/install_win7   (help)
+https://daymvs1.pok.ibm.com/ibmca-wireless/view/welcome.do   (reset, using firefox)
+证书密码：dec12twe
+history: 
+https://daymvs1.pok.ibm.com/ibmca-wireless/view/certificates.do
+如果自动setup 不生效，用收到setup，需要参考邮件中的步骤(mail subject:For win 7 : Create and configure wireless certificate  on 2018/2/27 in 'save' folder)
+
+***************************************************************************************************
+请在 BonD 系统里 ( 不包含在 Lenovo ThinkPad 维修服务里 ) 进行申请购买 - https://w3.ibm.com/procurement/buyondemand/common/protect/Connector.wss
+
+****************************************************************************************************
+有关VMWARE的问题，可参考NOTES中tivoli team目录下Support for IBM SWG products in a virtualization environment    vmware  on 12月4日(wang jun)
+
+*********************************************************************************************************
+如何更改主DNS后缀：我的电脑->属性->更改->其他 这里改的是主DNS后缀，更新完即可生效：ipconfig /all
+在网络连接->internet 协议->属性->高级->DNS   在这里添加，不能立即生效。
+
+对于ADSL 上公司网，可以在PROFILE上设置DNS，使得上内网方便。
+*************************************************************************************************
+
+POC: Proof of concept
+pot: proof of technowledge
+
+http://gbo.boulder.ibm.com/gbo/acronymlist.htm
+IBM 缩写大全
+
+**************************************************************************************************************
+
+how to download ITDT:
+http://www-933.ibm.com/support/fixcentral
+产品组： system store
+select from system store : tape systems
+select from tape systems : tape drivers and software
+select from drivers and software : IBM tape Dignostics Tool ITDT
+平台： linux
+
+如何安装：
+The provided itdt packages are self extracting binary files. Please run 
+the following steps to 
+extract the itdt utility: 
+- mkdir itdt 
+- mv tdtinst7.0.0.061LinuxX86 itdt 
+- cd itdt 
+- chmod +x itdtinst7.0.0.061LinuxX86 
+- ./itdtinst7.0.0.061LinuxX86 
+-----------------------------------------------------------------------------------------
+以下是ITCAM FOR WAS的信息中心，里面有说有的ITCAM FOR WAS的文档：
+http://publib.boulder.ibm.com/infocenter/tivihelp/v3r1/index.jsp?toc=/com.ibm.itcamwas.doc/toc.xml
+从左边书架上找到‘Composite Application Manager for WebSphere’
+点击它，就将ITCAM FOR WAS的所有文档展开了。
+
+**********************************************************************************************************
+Fix Central 机器代码（微码）更新仅对保修期内或遵守 IBM 硬件维护服务协议的 IBM 机器可用。针对操作系统或其他软件产品的代码仅对根据适用的软件保修或 IBM 软件维护协议授权的情况可用。
+
+从 2014 年 1 月起，IBM 在 Fix Central上为所选的软件产品和更新实施权利验证，并为所选机器的机器代码（也称为固件或微码）更新实施权利验证。将通过用户提供的机器序列号来检查机器代码（微码）更新的权利。将通过与相关 IBM 客户编号关联的 IBM标识来验证软件产品的权利。
+
+近期，我们发现有SSR在Fix Central用保外机器下载微码/软件补丁的情况。请注意并谨遵如下规定：
+
+1、如出于内部使用需求，IBM员工需要下载软件补丁或机器代码，请务必到如下链接下载
+http://port.rchland.ibm.com/support/fixcentral/ac/options
+你会被要求输入Intranet ID和密码。如下载机器代码，会要求输入机器的MT和SN，但并不会实施权利验证。此处下载的机器代码\软件补丁仅限IBM资产使用或测试使用，严禁安装于非IBM资产设备上。在此处下载的机器代码\软件补丁如安装于客户设备，将是违规的行为。
+
+2、如果你以客户的名义协助客户下载，请使用该客户的IBM标识下载软件补丁，用客户的机器MT和SN下载机器代码。
+
+**********************************************************************************************************
+IBM 员工手册：
+Chinese Version: https://w3-01.ibm.com/hr/web/cn-ibm/country_workplace_practices/hb2017_ch.html
+English Version: https://w3-01.ibm.com/hr/web/cn-ibm/country_workplace_practices/hb2017_en.html
+GCG HR Care Community: https://ibm.biz/Bdi5v7
+You Speak We Act - Forum: https://ibm.biz/Bdi5md
+------
+-----------------------------------------------all of AIX fix listing ------------------------------------------------------------------------------
+http://ausgsa.ibm.com/gsa/projects/s/service/public_html/releases/72/72CD.xref.html
+-----------------------------------------------------------------------------------------------------------------------------
+
+download fix by using sftp / ftps :
+select ftps/sftp download mode, 
+FTPS/SFTP 服务器:	delivery04.dhe.ibm.com
+用户标识:	aWzbZsBd
+密码:	GfvTz4GqD5ewEiP
+then from command line:(sftp user@server) #sftp aWzbZsBd@delivery04.dhe.ibm.com  -> enter GfvTz4GqD5ewEiP -> ls -> mget xxxxxx
+-----------------------------------------------------------------------------------------------------------------------------
+
+以下是IBM DEVICE DRIVER(设备驱动程序or ITDT)下载地址：
+
+http://www-01.ibm.com/support/docview.wss?uid=swg21428656
+
+所有的都转移到FIX CENTER上了
+http://www.ibm.com/support/fixcentral
+http://www-933.ibm.com/support/fixcentral/
+产品组(Product group)			：System Storage
+产品系列(select from system storage)    ：Tape systems
+产品类型(select from tape systems)      ：Tape drivers and software
+产品(select from drivers and software)  : Tape device drivers
+如果下载ITDT: 选择: IBM Tape Diagnostic Tool ITDT
+平台： windows 64bit
+
+
+1. 下载后，COPY到windwos的一个目录里，解压缩，看到二个。EXE文件，打开一个WINDOWS 窗口，运行 install_exclusive.exe
+运行成功后，
+2. 到windows的设备管理器上，看介质变换器的属性，在驱动程序的详细信息里，确保是ibmcg2k8.sys,在磁带驱动器的属性的详细信息里，确保是
+ibmfp2k8.sys
+3. 如果不是以上，要用更新驱动的方法更改成ibmcg2k8.sys 或ibmfp2k8.sys （新的驱动安装在c:\windows\system32下)
+
+
+-------------------------------------------------------------------------------------
+For Atape, 
+http://www.ibm.com/support/fixcentral and select the following options: 
+Product Group = Storage Systems 
+Product Family = Tape Systems 
+Product Type = Tape device drivers and software 
+Product = Tape device drivers 
+
+login device driver in ftp
+and see
+
+ftp://ftp.software.ibm.com/storage/devdrvr/IBM_Fix_Central_Site.html
+
+
+******************如何看进程号 process number******************************************************
+
+C:\Documents and Settings\Administrator>chcp
+活动的代码页: 936
+
+tasklist 看活动进程
+netstat -an
+
+看一个端口被哪个进程占用：
+netstat -ano | find "port_number"
+
+D:\Program Files\Tivoli\TSM\baclient>netstat -ano| find "1500"
+  TCP    0.0.0.0:1500           0.0.0.0:0              LISTENING       5824
+  
+或者：administrator 用户执行 cmd : netstat -anb
+
+tasklist | find "5824"
+or 
+tasklist /FI "PID eq 5824"
+D:\Program Files\Tivoli\TSM\baclient>tasklist /FI "PID eq 5824"
+图像名                       PID 会话名           会话#       内存使用
+========================= ====== ================ ======== ============
+dsmsvc.exe                  5824 Console                 0     16,892 K
+
+D:\Program Files\Tivoli\TSM\baclient>tasklist | find "5824"
+dsmsvc.exe                  5824 Console                 0     16,892 K
+
+
+
+或者：
+ netstat -ano--->shows pid's of process running on a port         
+  Proto  Local Address          Foreign Address        State           PID    
+  TCP    0.0.0.0:5529           0.0.0.0:0              LISTENING       3212                                                                  
+                                                                      
+ntprocinfo-->(control+alt+del)shows pid's                                              
+ verifiy tec_reception is running                                     
+3212   tec_reception   SCOMSUDI\Administrator    03/28/2009 03:07:04  
+                                                                      
+
+
+在AIX机器上的哪个端口被哪个进程占用：
+# netstat -an|grep "1920"
+f1600028d7289 tcp4 0 0 *.1920  *.* listen
+#rmsock 160028d7289 tcpcb
+the socket 0x28d7289 is being held by process 917558 (kdsmain)
+其中 ps -ef|grep ms
+root 852008           /tivoli/itm6/tems/aix513/ms/bin/cms start
+root 917558  852008   /tivoli/itm6/tems/aix513/ms/bin/kdsmain
+
+Linux Redhat : 
+1. netstat -pan | grep 1918
+2. lsof -i: 1918
+-----------------------------------------------------------------
+AIX
+1) Get protocol control block addresses and ports for all possible ports that
+the WPA could be listening on:
+
+# netstat -Aan | grep LISTEN | awk '{print $1,$5}' | egrep
+'6014|10110|14206|18302|22398|26494|30590|34686|38782|42878|46974|51070|55166|59262|63358'
+
+2) Each line of output will show a protocol control block address and a
+listener port.  Take each protocol control block address in turn and use it in  
+the command "rmsock <proto_ctrl_addr> tcpcb", like so:
+
+# rmsock f100020000851b98 tcpcb
+The socket 0x851808 is being held by process 131112 (khdxprtj).
+
+The one which returns "(khdxprtj)" at the end is correct one for the WPA. So
+the port associated with that protocol control block address is the WPA  
+listener. As an alternative, the following one-liner can be done once for each
+port in ascending order (6014, 10110, 14206, 18302 and so on...) until the  
+khdxprtj process is found as a result:
+
+# rmsock `netstat -Aan | grep '6014.*LISTEN' | awk '{print $1}'` tcpcb
+The socket 0x851808 is being held by process 131112 (khdxprtj)
+
+
+LINUX
+netstat -lnp | grep '\..*khdxprtj' | egrep
+'6014|10110|14206|18302|22398|26494|30590|34686|38782|42878|46974|51070|55166|59262|63358' | awk '{print $4}' | cut -d':' -f2
+
+
+SOLARIS
+pfiles `ps -ef | grep khdxprtj | grep -v grep | awk '{print $2}'` | egrep
+'6014|10110|14206|18302|22398|26494|30590|34686|38782|42878|46974|51070|55166|59262|63358' | awk '{print $5}'
+
+
+WINDOWS
+netstat -abn > file.txt
+---> file.txt will contain two lines per socket connection, the first
+containing the normal socket information and the second containing the name of
+the executable that created the connection. Search only for the "LISTENING"
+connections for the "[khdxprto.exe]" process. There may be multiple
+"LISTENING" entries but the correct one will match on of the ports:
+
+6014|10110|14206|18302|22398|26494|30590|34686|38782|42878|46974|51070|55166|59262|63358 
+------------------------------------------------------------------------------------------
+
+*********************************************************************************
+
+how much memory is normally for a product : answer
+
+There is not a standard saying whether the memory usage is normal or 
+abnormal because the memory consumption is affected by multiple 
+affectors. For example, it depends on what FastBack is doing, how much 
+data is handled, how many tasks are performed simultaneously, etc. 
+
+As L2 is mainly focus on defect support, if customer discovers any 
+memory usage problem and suspects memory leak, or customer notices any 
+sudden memory high usage from log, they can log a PMR for us to 
+investigate. 
+
+I'm afraid there is not a fixed answer to their memory usage question. 
+Please help communicate with customer. 
+****************************************************************************************************************
+--------------------------------------------------------------------------------------------------------------------
+vmware 端口映射：(NAT port mapping)
+修改宿主机的 /etc/vmware/vmnet8/nat/nat.conf
+加上 端口1=vmare_Ip:端口2， 重启宿主机。
+这样在laptop上访问 宿主机：端口1 就直接访问vmware_Ip：端口2.
+如，宿主机是9.181.159.20，另外一个NIC是：192.168.10.212, 虚拟机上192.168.109.128，我在laptop上应该访问9.181.159.20：1500 
+就相当于访问了 192.168.109.128：1500的应用,即tsm server.
+
+[incomingtcp]
+# Use these with care - anyone can enter into your VM through these...
+# The format and example are as follows:
+#<external port number> = <VM's IP address>:<VM's port number>
+#8080 = 172.16.3.128:80
+1500 = 192.168.109.128:1500
+11090 = 192.168.109.128:11090
+
+--------------------------------------------------------------------------------------------------------------------
+Please continue using VNC if GUI is needed and be careful when extending lv size.
+
+#!/bin/sh
+
+PATH=$PATH:/usr/dt/bin
+
+if [ -f /usr/dt/bin/Xsession ]
+then
+    export XSTATION=1 DTXSERVERLOCATION=local
+    Xsession &
+else
+    xrdb $HOME/.Xdefaults
+    xsetroot -solid grey
+    xterm -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
+    mwm &
+fi
+-------------------------------------------------------------------------------------------------
+
+
+Severity   REtain          AP best practice
+1          daily             daily
+2          5 elapsed days   3 elapsed days
+3         10 elapsed days   5 elapsed days
+4         10 elapsed days   5 elapsed days
+
+**********************************************************************************************************************
+
+WWER 中 serial code: RMP 是会被AUDIT， (RM0不会被audit。现在是R00)
+*******************************************************
+新IP: 9.181.58.248
+ext: 6710, agent: 2710 , pass:1234
+
+座机电话： 按login 键，2710#1234
+(old: 5461#073651)
+
+avaya: 9+phone number
+          
+Jabber: 
+https://w3-connections.ibm.com/wikis/home?lang=zh-cn#!/wiki/CN%20IT%20HANDBOOK/page/3.9%20Cisco%20Jabber%20User%20Guide%20(Chinese)
+
+*********************************************************************************************************
+C:\Users\IBM_ADMIN\AppData\Roaming\Apple Computer\MobileSync\Backup
+IPHONE5S backup location:
+---------------------------------------meeting id--------------------------------------------------------------------
+
+ITM team meeting : https://ibm.webex.com/join/gchen
+MeetingID: 926 423 655 
+
+L2/L3 meeting :
+
+Join WebEx meeting
+https://ibm.webex.com/join/shepardd
+https://ibm.webex.com/join/gsoto28
+
+1-844-531-0958   Unites States of America Toll Free
+Access Code 923 300 585
+
+--------------------------------------------------------------------------------------------------------------------
+cisco IP phone : 82459335 : ext: 59335:  
+IDD/DDD code: 11520491
+Press 0 for outside, then press  0 +area code + phone number and # 11520491 #
+--------------------------------------------------------------------------------------------------------------------
+new telcon  conference :  meeting
+
+https://bluepages.ibm.com/password/vendor/auth/login.wss?code=att_prod
+
+Host Code:	   95843499
+Participant Code:	   19132607
+   
+   
+
+Telphone:      
+China	 	Caller Paid	 	400-821-0751           
+China	 	Toll-Free	 	800-820-0027     
+      
+
+Hong Kong	Caller Paid		6963-0501	
+Hong Kong	Toll-Free		800-90-5535	
+
+Taiwan	 	Caller Paid	 	0-2-77457238	 
+Taiwan	 	Toll-Free	 	00801-10-4334
+
+Macau ? 
+   Toll-Free 0-800-111, 888-426-6840, 
+
+USA ? 
+    Caller Paid ? 215-861-6239 ? 
+    Toll-Free ? 888-426-6840   
+
+
+telphone: https://www.teleconference.att.com/servlet/glbAccess?process=1&accessCode=69464897&accessNumber=4001201478#C2
+
+in notes calendar 'schedule a meeting' add somebody into 'Invitee'
+paste mail content in it
+and attated something if you have .
+
+search profile: https://www.teleconference.att.com/servlet/radiReg
+
+Participant Code(old:71306448) (81296457)
+Host Code	 : (old:54669703) (15682797)
+(old: Host Code	 : 38028813  Participant Code : 14580594
+Host Code:	   11937415
+Participant Code: 62045466
+ )
+
+
+China	 	Caller Paid	 	 (old: 4001-201-478	 PREFERRED ACCESS)
+China	 	Toll-Free	 	 (old: 10-800-110-0996	 TELECOM LIMITED ACCESS)
+China	 	Toll-Free	 	 (old: 10-800-711-1071  NETCOM LIMITED ACCESS)
+
+
+----------------------------------------------------------------------------------------------------------
+办公室着装：Smart Casual ： 
+https://apps.na.collabserv.com/wikis/home?lang=zh-cn#!/wiki/W76c2977d1ce1_428c_9e58_090ade976810/page/Be%20a%20Smart%20Casual%20IBMer
+
+----------------------------------------------------------------------------------------------------------
+KPI explaination :
+
+1. Self- Sufficient
+
+PMR's closed which have NOT be forwarded to L2 or L3 retain queues. That mean PMR is solved whithin China(L1 support) & L2/L3 did not involve .
+L2*: L2/L3 involved (not only L1) PMR
+(L2): Only L2 involved
+
+( Monthly closed PMRs for L1  /  Monthly closed PMRs  ) * 100 % = Seft-Sufficient  % .
+
+2. HPP & EPSAR (hours)
+
+Team HPP ( TSG Hours Per PMR) = TSG touched hours / closed calls.
+
+3. SG Days (Total fix time)
+
+Length of time from CE (call open) to last SG (non 99) not call close. Shows the length of time before solution given to customer.
+
+Total length of time from CE to last SG provided for all monthly closed calls = Total fix time (Ave. days) .
+
+4. Inventory/receipts ratio
+
+The number of closed pmr , divided by the number of receipts(open pmr) .  
+
+Monthly closed calls / Monthly opened calls =  Inventory/receipts ratio . 
+Target Inventory/receipts ratio: >0.90
+
+Backlog Index (Including Severity 1or priority 1)
+Backlog Index = Active calls / Monthly opened calls
+* Backlog: PMR was opened and not closed in report month.
+
+new KPI: TTR: Time To Resolution
+PMR closed date - PMR opened date  (indicate total PMR lifecycle)
+
+---------------------------------------------------------------------------------------------
+jca: analysis java core
+HA : analysis heap dump and system dump
+
+<Java Runtime Environment path>java -Xmx500m -jar jca101.jar
+
+cd c:\software\jca
+C:\software\Jca>"C:\Program Files (x86)\IBM\Java17_64\jre\bin\java" -Xmx3g -jar ha455.jar
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+升级java（于WAS有关的java）：先在 http://www-01.ibm.com/support/docview.wss?rs=180&uid=swg27005002#WAS855J71 查某个java 版本在哪个WAS server里
+对于java 1.6，要升级WAS 才能升级java
+对于java 1.7，可以单独升级java，在IBM support（https://www.ibm.com/support/home/) 上找对应的WAS的版本，
+比如，要升级java 到7.0 sr9fp10，查到是WAS 8.5.5.7，到IBM support 上用关键字 'V8.5.5 Fix Pack 7' 可找到
+http://www-01.ibm.com/support/docview.wss?uid=swg24040533， 其中‘Java SDKs - Installation Manager (IM) Install’ 对应的java是
+7.0.9.10-WS-IBMWASJAVA-part1.zip & 7.0.9.10-WS-IBMWASJAVA-part2.zip，下载，用IM安装。
+
+
+
+putty删除键backspace设置 :
+stty erase 《backspace》 : 其中《backspace》是按一下backspace键
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+windows 开机启动项目： cmd.exe -》 msconfig   （开机自启动设置）
+--------------------------------------------------------------------------------------------------------
+
+Learn about Software licensing
+http://www-01.ibm.com/software/passportadvantage/about_software_licensing.html
+
+uvu,pvu,rvu
+
+**************************cmd 窗口一闪而过****************************************************************
+cmd命令没加参数，默认参数/C是运行程序后就关闭窗口，加个参数/K就行了,如果运行某个程序时又开一个新的窗口，是由于运行这个程序是没有用administrator用户运行
+**************************************************************************************************************
+键盘： <windows>+E , <windows>+D (desktop), <windows>+R ,psr.exe,记录屏幕。 osk.exe屏幕键盘。
+**************************************************************************************************************
+***********************************************************************************
+HR communities: 
+https://apps.na.collabserv.com/wikis/home?lang=en-us#!/wiki/W76c2977d1ce1_428c_9e58_090ade976810/page/2017%20Full%20Year%20Holiday%20Arrangement%20%28including%202016%20Dec.%29
+或者找邮件：subject： HR Communications
+
+全年假期安排：
+http://w3-01.ibm.com/hr/web/cn-ibm/timeoff/loa/annualleave.html
+***********************************************************************************
+http://www-969.ibm.com/software/reports/compatibility/clarity/prereqsForProduct.html
+
+search : composite application manager agent : WAS agent
+***********************************************************************************
+http://www.smartercu.com/tmp/nologon/calendarstu!detailed.action?activityid=174709
+user : liuyingj@cn.ibm.com , pass: p0o9i87u
+***********************************************************************************
+L2 blog:
+https://w3-connections.ibm.com/communities/service/html/communitystart?communityUuid=709ba3cd-4f91-41e4-b507-70ed8b9b180e
+**************************************************************************************************************************
+acknowledge center download : open it by using firefox , then click download icon, IE and chorme did not have it
+MACOS 下的firefox，打开新标签总在最右边的设置：about:config -> browser.tabs.insertAfterCurrent 改成false （好多文档是true，是不对的），然后重启firefox
+***************************************************************************************************************************
+http://www-304.ibm.com/support/customercare/sas/f/handbook/policies.html#unsupported
+IBM middleware support on unsupported operating systems
+***************************************************************************************************************************
+think40 / think 40 : https://w3-151.ibm.com/learning/lms/Saba/Web/Main
+***************************************************************************************************************************
+查看自己名下的IBM 资产： https://w3-201.ibm.com/services/eamtlite/
+****************************************************************************************************************************
+subscribe newsletter method
+1. in product acknowledge center : search newsletter 
+2. in IBM support search function "https://www.ibm.com/support/home/"  searching newsletter
+3. send email to IWAinfo@it.ibm.com ,subject: Subscribe xxxx , mail content: thank you
+
+****************************************************************************************************************************
+microsoft : MS fixpatch list : https://www.microsoft.com/en-gb/download/confirmation.aspx?id=36982
+***************************************************************************************************************************
+http://jingyan.baidu.com/article/335530da4f774019cb41c3eb.html
+create wifi on laptap
+cmd: netsh wlan start/stop hostednetwork
+**************************************************************************************************************************
+Slack： 网页版：https://slack.com/your-workspaces
+       应用版：网页版的最上面用户名处下拉 最后：open slack app , 或者网页版 登陆页面点击 “create workspace”
+********************************************************
+lantern /  windows 现实开机启动进程： msconfig
+
+*************************************************** salary / 查工资************************************************************************
+自 2019 年 2 月 4 日后，请根据以下步骤操作在 Workday 中查看和下载 "工资明细单" :
+
+点击右上角头像  > 点击 View Profile
+页面左侧点击 Actions > Employee > Compensation Statements
+选择并点击想要查看的工资明细单
+在新打开的标签栏中查看、下载即可
+***************************************************************************************************************************
+snip : shortener url :
+0. https://snip.innovate.ibm.com/
+
+1. https://w3-connections.ibm.com/wikis/home?lang=en_US#!/wiki/W761a7cd6952b_43ff_920f_b412cd0157f4/page/Snip+%28URL+Shortener%29
+or 
+https://ibm.biz/BdF2c3
+
+2. This is IBM's URL shortening service. If you're an IBMer, you can find out more here: http://snip.innovate.ibm.com
+3. https://ibm.biz/Bd4vj2 : snip community
+***************************************************************************************************************************
+------------------------------ experience ----------------------------------
+1. TSM and DB2, 在db2diag.log查看备份时的的APPID，然后找这个ID的信息。
+2. itm set trace : KBB_RAS1=(UNIT:kdsvlunx ALL)
+会产生名为 hostname_kdsvlunx_timestamp.log   
+------------------------------------------------------------------------------------------------------------------------------
+
+Per talked yesterday, our team will start to monitor "App Performance Manager" Support Mission for any new cases between 
+11:00am ~ 3:00pm BeiJing time. (12:00pm ~ 4:00pm when Daylight Saving time ends) from Aug/13. 
+
+We will perform first contact and must gather for all new cases, and work on Sev1 case if you have skill and bandwidth to do so. 
+And for Sev1 case, please contact US pager to engage Dan's team whenever help is needed. Hopefully, with our skill growth, 
+we can allow folks in US to gain a few hours of sleep for Sev1s.
+Here are the details for engaging the US team on any Sev1s that your team may require help for Sev1 cases specifically:
+*** PAGER:(ALL PRODUCTS) ---> 1-866-251-4117 (sev1 only)  
+Send email to "8662514117@skytel.com" with the Sev1 Case number that needs attention.
+
+Gary is creating a table for all the mustgathers for everything, it will cover both APM and Cloud App Management, 
+just allow him a couple of days to get it done.The table will be posted at 
+
+https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Wb7621de4a6cc_4b5d_a7ed_2ea32855b5b1/page/APM%20and%20CAM%20basic%20Mustgathers%20for%20all%20components
+
+You will also find many useful material in link below, please feel free to download and read/watch. (@Japan team, this link will benefit you guys too).
+https://ibm.box.com/s/0s1slpen6uualo3g70yxm6w2ywxf0v5f
+
+I'd appreciate everyone's commitment on putting additional effort on supporting APM V8 cases.
+--------------------------------------------------------------------------------------------------------------------------------
+salesforce 上： 
+(加一个人到ITM agent mission 中方法：在SF中主菜单选择support missions,如果没内容，点击recently viewed旁小箭头，选择all,可以看到所有的mission，找到ITM agent，
+在assign agent,选teams,选择相应的team，旁边小箭头，添加成员，如果不在这些成员中，就需要问相应的人了)
+
+-------------------------------------------------------------------------------------------------------------------------------
+chrome reported : invalid cert 对于私人地址的访问，而firefox 可以。
+方法1： 在chrome 键入地址而且报 invalid cert 时候或者“your connection is not private" 键入 thisisunsafe
+方法2： 用firefox 导出证书：acess http地址，高级，添加例外，查看（获取证书下面），详细信息，导出（证书），会生成一个cert文件
+       到macos的下载，点击刚生成的cert文件，打开macos的钥匙串，在证书的地方找到刚加入的证书，显示“证书不受信任”，右键点击 “显示简介”，使用此证书时：始终信任,
+       证书改为 受此账号信任。  重启chrome 生效。
+       
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Hello
+Pls reference 
+https://www.ibm.com/support/pages/node/6527962
+and 
+https://www.ibm.com/support/pages/node/6538414?myns=swgtiv&mynp=OCSSZ8F3&mync=E&cm_sp=swgtiv-_-OCSSZ8F3-_-E
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+log4j: the latest:
+https://www.ibm.com/support/pages/node/6525824
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+(previous)
+Hello,
+
+IBM’s Security Response Team is aware of the situation and have published the following flash/bulletin:
+
+https://www.ibm.com/blogs/psirt/an-update-on-the-apache-log4j-cve-2021-44228-vulnerability/
+
+https://www.ibm.com/blogs/psirt/security-bulletin-vulnerablity-in-apache-log4j-may-affect-ibm-tivoli-monitoring-installed-websphere-application-server-cve-2021-44228-2/
+
+While the investigation from our development team has not been fully concluded yet, I cannot authoritatively confirm the TEPS exposure level, however as soon as this has been completed, either myself or one of our engineers will update you to confirm the next steps. 
+
+(fix: https://www.ibm.com/support/pages/node/6527962?myns=swgtiv&mynp=OCSSZ8F3&mync=E&cm_sp=swgtiv-_-OCSSZ8F3-_-E)
+
+above response was official response.
+
+I get the following update from ITM developer:
+
+official fix : 
+ITM: https://www.ibm.com/support/pages/node/6527962 
+APM: https://www.ibm.com/support/pages/node/6527954  (or https://www.ibm.com/support/pages/node/6526216)
+ITCAM: https://www.ibm.com/support/pages/node/6528302
+
+others (CVE-2021-45105,CVE-2021-44832,CVE-2021-39275,CVE-2021-4104, CVE-2021-45046,CVE-2021-38951,CVE-2021-29842) relevant: 
+https://www.ibm.com/support/pages/node/6538414
+or
+https://www.ibm.com/support/pages/node/6538414?myns=swgtiv&mynp=OCSSZ8F3&mync=E&cm_sp=swgtiv-_-OCSSZ8F3-_-E
+
+(CVE-2021-4104, CVE-2021-45046) : https://www.ibm.com/support/pages/node/6526750
+(CVE-2021-45105) : https://nvd.nist.gov/vuln/detail/CVE-2021-45105
+
+-------------------------------------------------------------------------
+This is the only information that I currently have available:
+
+Use the following pages to stay up to date with the latest information relating to this vulnerability.
+
+IBM PSIRT Blog
+
+An update on the Apache Log4j CVE-2021-44228 vulnerability
+
+https://www.ibm.com/blogs/psirt/an-update-on-the-apache-log4j-cve-2021-44228-vulnerability/
+
+This page includes the list of products that are confirmed not impacted by Log4j 2.x CVE-2021-44228
+
+If an IBM Software or Systems product is impacted, there will be a bulletin posted on this blog as a remediation or fix becomes available.
+
+IBM Product Security Incident Response
+
+https://www.ibm.com/blogs/psirt/
+
+Please note:
+
+IBM does not confirm or otherwise disclose vulnerabilities externally, even to individual customers, until a fix or remediation is available. If an IBM Software or Systems product is impacted, there will be a bulletin posted on either this IBM PSIRT blog as a soon as a remediation or fix becomes available. Such on-premise IBM products will then need to be updated by the customer as defined within the related security bulletin.
+
+You don't need to physically check the blog.
+----------------------------------------------------------------------------
+
+The below flash has been pulled for now as it needs to go through legal before we can re-publish the information.
+
+So, If you want to get IBM Official technotes, pls await more days ,
+
+----------------------------
+
+ITM L3/Development has completed a code level review and finds that CVE-2021-44228 is not applicable to any ITM release level for all of the following components:
+
+All desktop components
+• Agent Builder (AB)
+• TEP (Tivoli Enterprise Portal)
+
+All server components
+• IBM Infrastructure Management Dashboard
+• TEMS (Tivoli Enterprise Management Server)
+• TEPS (Tivoli Enterprise Portal Server)
+
+All agent or client components
+• OS Agents & TEMA (Tivoli Enterprise Management Agent)
+• Summarization and Pruning Agent (SPA)
+• Tivoli Log File Agent
+• Tivoli Performance Analyzer (ITPA)
+• Warehouse Proxy Agent (WPA)
+
+Note:
+Scanners may find and report log4j at the version reported in the CVE. The affected version of log4j is included if you've installed ITM 630 fix pack 7 service pack 6 or later and updated to WAS 8.5.5.x. WAS 8.5.5.x includes as an installable application ear file, uddi.ear, but it is not deployed for use and therefore the TEPS system is not vulnerable. 
+
+The jar file, log4j-1.1.1.jar, is obsolete and no longer used by ITM.
+
+Regards & Thanks
+
+
+
+The flash has been pulled for now as it needs to go through legal before we can re-publish the information.
+
+So, If you want to get IBM Official technotes, pls await more days.
+       
+---------
+https://www.ibm.com/blogs/psirt/an-update-on-the-apache-log4j-cve-2021-44228-vulnerability/#list-of-products
+ITM: https://www.ibm.com/support/pages/node/6525824
+------------------------------------------------------------
+Spring4shell:
+
+https://w3.ibm.com/w3publisher/monitoring-technical-support/cve
+
+CVE-2022-22965 : ITM L3 told us that "No Impact to ITM. It is present but not accessible.  A bulletin will be published later in 2Q2022"

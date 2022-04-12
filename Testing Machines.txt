@@ -1,0 +1,593 @@
+---------------------------------------------------------------------------------------------------------------------
+Ring cloud的VM 要过下BSO，否则不能从laptop上SSH
+putty 失败后要用browser 过一下firewall: 用firefox，键入: http://9.112.226.34/ （IP是要过firewall的IP），它会自动跳转到 https://9.125.238.80/netaccess/redirect.html?sid=58375335
+或者将putty的server设成telnet 方法，登录后会让过BSO
+---------------------------------------------------------------------------------------------------------------------
+https://cloud.cn.ibm.com/portal/homePage  点击“云和安全服务”，在“云入口”可以选择 Ring cloud 或者Xcloud（openstack），计算，实例，有个人实例和接收实例等
+---------------------------------------------------------------------------------------------------------------------
+VCSA IP:  9.125.73.72      (https://bxvmc208.cn.ibm.com/ （用firefox，先过BSO))
+   Liuyj@vsphere.local  /  Woxuyaogaimima@1  （这个不能用了）
+   itaas  / Woxuyaogaimima@1
+ 
+其下的资源：IP段是9.112.247.*   ，一共与40个IP： 9.112.247.55 - 74, 90 - 109 
+The allocated IP addresses are:
+John: 61-67    Qing wei: 68-74   Marco:95-101  Shashi：102 -109
+
+9.112.247.55 ： root / Itaas4change : pin yi的ocp
+
+(old:  pinyi转过来的资源：删除VM时候询问下pin yi .  (bxvmc211.cn.ibm.com = 9.125.73.75)
+http://bxvmc211.cn.ibm.com/ （用firefox，先过BSO) user：liupinyi@vsphere.local   password：Passw0r!  （如果改密码，也要改下面VM agent的密码 old:Itaas4change@1，Woxuyaogaimima@1) （有时登陆不成功，等等，多试几次）)
+
+每次创建一个VM后，要手工注册inventory:
+参考： https://w3.ibm.com/w3publisher/linyue/inventory-manual-registration
+1. https://inventory.devit.ibm.com
+2. left menu： create， hardwared ID: 点击search : J31Z7KT， 移到下方，双击
+3. 双击找出的内容, 
+4. 另外一个网页，进入 http://bxvmc211.cn.ibm.com/  -》 点击新的VM，按照相关的内容填入上表 （填FQDN，Primary IP, OS version(red hat, rhel8),Function name:base os, Owner email)
+5.submit，应该出现2个窗口，都是Is clean.就可以了，如果是红的，改成标红的项目。
+6. 右边 my system 查看
+
+--------------------------------Ring cloud----------[root:cat /etc/ntp.drift = 20.979---但是另外命令显示却是 11.385，应该以11.385为准------------------------------------------------------------------------
+[root@bxvbse02:~] ntpq -p
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+*bejgsa.cn.ibm.c 9.56.248.88      2 u  609 1024  377    6.893  +11.385  10.483
++e2y_vdd_d3a.cn. 9.56.248.88      2 u  398 1024  377    8.894  +11.199   8.871
+
+[root@bxvbse02:~] ntpq -np
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+*9.119.32.128    9.56.248.88      2 u  682 1024  377    6.893  +11.385  10.483
++9.119.32.129    9.56.248.88      2 u  471 1024  377    8.894  +11.199   8.871
+----------------------------------------------------------------------------------------------------------R: ring cloud, F: fyre ------------------------------------------------------
+   Hostname         IP              User                   installed components  (default pass:Sun5kong)
+
+1R.) ITM630WIN2012 	9.111.96.155  Administrator  ITM 6.30.07 TEMS/TEPS/TEPD/WPA/SPA/Warehouse/ | all of ITM 6.30.02/07 installation medias / VMware agent 7.2.0.7
+	    (win2012 R2)    (sysadmin 所有用户pass都是Sun5kongSun5kong,由于有15个字符的限制KUIC00015E，取消了validate user, eWAS:wasadmin,Sun5kong)        "db2 data studio client",UD agent,LFA
+	     (windows password: Sun5kong )    （如果由于配置了LDAP，只能用liuyingj@cn.ibm.com 作为用户登录）
+	     C:\Program Files (x86)\ibm\Java71\jre\bin>javaws http://localhost:15200/tep.jnlp
+	  ***   C:\Program Files (x86)\ibm\Java80\jre\bin>javaws http://9.111.96.155 :15200/tep.jnlp
+	   但是它的java control panel 要用 C:\Program Files (x86)\ibm\Java80\jre\bin>javacpl 启动，不能是windows java control panel中的
+
+2R.)	ITM630RH7 	    9.112.234.94		root  	ITM6.30.07 LZ/LZ agentless server / Omnibus object server/PA/Omnibus agent/EIF probe/Syslog probe/snmp probe
+    (RH 7.9)	                pass:  Woxuyaogaimima@1  (old: Zaq1!xsw2@cde3# , Zxcvbnm1234567! , tang1sengtang1seng  , Q1!w2@e3#r4$t5%)      （./itmcmd agent -o RH73 stop r4 (community: Sun5kong）, TEPD (vnc,itmcmd manage)
+  （EOL date : June 30, 2024）： (vnc user pass: Sun5kongSun5kong) (./itmcmd agent -o rzrh7 stop r4 (community: Sun5kong）)
+                                                             (object server: root/Sun5kong, PA:ITM630RH7_PA: root/Sun5kongSun5kong)
+                    (password for root, netcool : Sun5kongSun5kong)
+                    instana agent: /opt/instana/agent/bin/start : (connect to instana: 9.112.247.90)
+    
+3R.) AGGBwin2016    9.111.97.52  	Administrator : Sun5kongSun5kong : omnibus server:AGG_B (C:\IBM\Tivoli\Netcool\omnibus\bin>nco_pa_status -server AGGBwin2016_PA -user root -password Sun5kongSun5kong    )
+                                  C:\IBM\Tivoli\Netcool\omnibus\bin>isql -S AGG_P -U root -P tang1sengtang1seng (由于APP_P的root密码改了，同步后也改了)
+                                  bi-gw:WIN2016_AGG_GATE ;file-gw:win2016_FILE_GATE;  NT agent(C:\ITM) / congnos BI server：http://localhost:9300/bi
+
+4R.) win2016dash		9.111.96.147   administrator : Sun5kongSun5kong : DASH/WebGUI/AEL
+                                   https://9.111.96.147:16311/ibm/console/   smadmin/ Sun5kongSun5kong  / 在MACOS上访问更快
+                                   (C:\Program Files\IBM\JazzSM\profile\bin>stopserver server1 -user smadmin -password Sun5kongSun5kong)           
+                               C:\Program Files\IBM\JazzSM\profile\bin>startserver server1     : smadmin/Sun5kongSun5kong /stopsever needs input smadmin/Sun5kongSun5kong
+                               
+5R.) ITMITCAMRH8 : 32GMEM, 8CPU: 9.111.96.191 : root/Sun5kongSun5kong(tacmd login 可用 Sun5kongSun5kongkong 作为密码) : DB2 V11.1(db2inst1(db2inst1db2inst1),itmuser(itmuseritmuser)
+         /HUBTEMS(TEMSRH8)/TEPS (sysadmin/Sun5kongSun5kong)/Desktop TEP 
+        /HD/SY/LZ/VM/ (/opt/IBM/ITCAM/bin : tomcat9/mysql(se)) / AB (/opt/ibm/Agentbuilder) :k01 / LFA:remote4lfa ; nonUTF8
+         webstart TEP(本机启动hang）: login AGGBwin2016, open a command line: C:\Program Files (x86)\IBM\Java80\jre\bin>javaws https://9.111.96.191:15201/tep.jnlp
+         或者到 ITM630WIN2012 上的java80 下运行javaws也可以 ： C:\Program Files (x86)\ibm\Java80\jre\bin>javaws https://9.111.96.191:15201/tep.jnlp
+         or, run TEP.jnlp in desktop  or 先用 https://9.111.96.191:15201 下载tep.jnlp 到本地，然后 javaws c:\download\tep.jnlp   (注意要将域名地址加到system32/drivers/etc/hosts)
+         vmware VM agent: data source id & instance：bxvmc208, server: bxvmc208.cn.ibm.com, itaas  / Woxuyaogaimima@1 ,对应的vcenter见上面pin yi的资源, bxvmc211 没用了。)
+         （old：vmware VM agent: data source id & instance：bxvmc211, server: bxvmc211.cn.ibm.com, user：liupinyi@vsphere.local   password：Itaas4change@1 ,对应的vcenter见上面pin yi的资源，已经改成bxvmc208)
+         /opt/IBM/ITM/bin/itmcmd config -S -t TEMSRH8  (ip.spipe:3660)
+         ./itmcmd agent -o bxvmc211 start|stop vm
+         (tomcat9:/usr/local/apache-tomcat-9.0.45/bin/version.sh : install docs: https://www.liquidweb.com/kb/how-to-install-tomcat-9-on-centos-8/ , check jdk: alternatives --list | grep java)
+         (/usr/local/apache-tomcat-9.0.45/bin/startup.sh | shutdown| catalina.sh stop|start | )
+          http://localhost:8080 : https://localhost:8443 : http://localhost:8080/host-manager : tomcat/Sun5kongSun5kong
+         #install mysql in RHEL8 (https://tecadmin.net/install-mysql-8-centos-8/)
+         #sudo systemctl start mysqld.service | #mysql -u root -p (Sun5kongSun5kong) | #mysql -u itcamadmin -p (Sun5kongSun5kong)
+         SE agent instance: mysql1
+         
+         
+6R.) deleted: APM814RH7	       9.111.97.187     pass: Zhu8jie     
+
+7R.) instana : 9.111.96.160 : root / Sun5kongSun5kong : RHEL 8.4 : 32GB memory
+	                                                         
+	
+8R.) OLD23783 (ITM630AIX7)	Power8	AIX7.1.0.5 	9.112.225.40 root/Sun5kong : ux, lo(log1),r3(aix1)  （登录失败，过下BSO）
+	       (vncserver | 如果启动IBMIM，需要：1. cd /opt/IBM/InstallationManager/eclipse/, 2. export LIBPATH=/opt/freeware/lib, 3. ./IBMIM)
+	       (db2 connect to ITMDB user itmuser  using Sun5kongSun5kong , ITMDB是远程DB，user要用远程server上的用户，不能用本地用户，否则报
+	       SQL30082N  Security processing failed with reason "24" ("USERNAME AND/OR PASSWORD INVALID").  SQLSTATE=08001)
+
+9R.) testaam: AIX 7.2.5 P: 9.112.225.84 , root / Sun5kongSun5kong  (init:Woxuyaogaimima@5) : install TEMS 6.30.00 (for TS008993778,uninstall some of packages)
+	       
+
+
+1 myvmware.)   Instana: 9.112.247.90 : RHEL8/300GB/64GB : root/Sun5kongSun5kong  :  for instana server   (https://instana) ：在vmware上
+
+2F.)  status1.fyre.ibm.com : 9.112.255.246 : RHEL8 (cluster) : root/Sun5kongSun5kong  : lz, lo agent
+3F.） equitant1.fyre.ibm.com : 9.123.116.15 : ubuntu: root/Sun5kongSun5kong : /images 下有各种介质
+4F.)  grouting1.fyre.ibm.com : 9.112.254.249 : RHEL8 (64GB memory) : root/Sun5kongSun5kong  : 6.30.07SP8 : RTEMS : 9.112.254.249 -> hub : TEMSRH8 , HD -> RTEMS, LZ->RTEMS
+                   WAS(websphere) 9.0.5.1: 创建4个profiles (/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/wct.sh)
+                   https://localhost:9043/ibm/console/login.do?action=secure  (wasadmin/wasadmin)  : startsever server1  (单独profile)
+                   https://localhost:9044/ibm/console/login.do?action=secure  (wasadmin/wasadmin)  ：
+                             grouting1Cell01 - Nodes - grouting1CellManager01 (ND 9.0.5.1) - Servers - dmgr
+                                         
+                   https://localhost:9045/ibm/console/login.do?action=secure   (wasadmin/wasadmin) ： 
+                   (/opt/IBM/WebSphere/AppServer/profiles/AppSrv02/bin : ./serverStatus.sh -all , ./startNode.sh , ./startServer server1, ./startManager.sh)
+                             grouting1Cell02 - Nodes 
+                                                 - grouting1CellManager02 (ND 9.0.5.1) - Servers - dmgr
+                                                 - grouting1Node02  - Servers (-nodeagent -server1) 
+
+                   YN agent (export JAVA_HOME=/opt/IBM/WebSphere/AppServer/java/8.0 ; DC_home\bin\config.sh)
+
+5F.) RZRH81         9.112.253.206  in Fyre (RZRH81.fyre.ibm.com) (root/Sun5kongSun5kong)	(其oracle图像界面，su - oracle, export DISPLAY=:1, runInstaller.sh)
+                 su - oracle , $ORACLE_HOME/bin/lsnrctl start [listenername] ; sqlplus "/as sysdba" ; startup ; 
+                  oracle_SID=lyj19c, RZ 2 instances:lyj19c, lyj19c2 
+
+6F.) stir1 : 9.112.254.207 : administrator/Zxcvbnm1234567! : ITM 6.30.07 SP9 : YN 7.20.00.IF12  （只能用firefox上： https://stir1:15201/tep.jnlp 启动，命令行javaws 不能用）
+7F.) inhabit: 9.112.255.233 : administrator/Zxcvbnm1234567! : ITM 6.30.07 : only WPA/SPA
+8F.) Motto: 9.112.252.128 : administrator / Zxcvbnm1234567! : ITM 6.30.07 : only TEMS/TEPS
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+FYRE: https://fyre.ibm.com/  user: liuyingj@cn.ibm.com : intranet password : (old:z1x2c3v4b5n6m7,8)
+vm root password: Zxcvbnm1234567!  : old: Zaq1!xsw2@
+对于Ubuntun的VM，上面密码不行，登陆不上，可以点击VM，单独修改VM的密码，改成（Woxuyaogaimima@1)这样的密码，然后可以登陆，再马上改root 密码。
+FYRE protect pass: !1qaz2wsx3edc4rfV  (old: Zaq1xsw2cde3vfr4!   (old:Zaq1!xsw2@))
+点击my account,有 RESTAPI key
+
+Quota:  需要 20个虚机，每个虚机32G memory，100G 磁盘。
+
+--------------------------ssh root@IP ---所有的VM说明在notes的fyre list文件夹----------password:Zaq1!xsw2@-----current root password: Zxcvbnm1234567! ------------------------------------------------------------------------------
+No. Embers           								   Public IP   		   Private IP     Additional Disks         type
+
+1F.) fate1.fyre.ibm.com 									9.112.254.87	    10.61.2.183 : Administrator/Zaq1!xsw2@   ： windows 2016:  用于在office以外的场所使用Salesforce系统
+    
+2.) openshift 4.6.31 :  cloudpak for mcm 2.0 testing : root / Zaq1!xsw2@
+3.1) oc login -u kubeadmin -p xxxx
+3.2) oc login --token=sha256~eu5Evbe7B9Wr48tfUNH6O1JZRsXteyVpZeLkMjsA2rA --server=https://api.nobly.os.fyre.ibm.com:6443  (login ocp console->upper right-copy login command)
+3.3) oc login -u kubeadmin -p xxxxx --server=https://ocpserver:6443
+
+3.4) oc login -u system:admin
+
+4.) after create ocp, create storage : https://pages.github.ibm.com/cloudpakbringup/bringup-site/how-to/Fyre/#ceph-storage
+
+-----------------------------------------------------------------------------
+9F.)  OCP Version 4.9.5
+Access Url https://console-openshift-console.apps.poorboy.cp.fyre.ibm.com
+Username kubeadmin
+Password gIsmS-i38dB-pDKfp-5B6rZ
+Node Fips Enabled n
+Name 															IP 						CPU  Memory
+api.poorboy.cp.fyre.ibm.com       9.46.197.146   4     8
+poorboy-master0										10.17.102.250  8     16
+poorboy-master1										10.17.107.204  8     16
+poorboy-master2										10.17.108.15   8     16
+poorboy-worker0										10.17.112.202  16    32
+poorboy-worker1										10.17.122.16   16    32
+poorboy-worker2										10.17.122.20   16    32
+
+ssh root@9.46.197.146 : Zxcvbnm1234567!
+oc get node:
+master0.poorboy.cp.fyre.ibm.com
+master1.poorboy.cp.fyre.ibm.com
+master2.poorboy.cp.fyre.ibm.com
+worker0.poorboy.cp.fyre.ibm.com
+worker1.poorboy.cp.fyre.ibm.com
+worker2.poorboy.cp.fyre.ibm.com
+
+
+------------------------------------------------------------------------------------------------------------------------
+upgrade oc client: [root@nobly-inf ~]# wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.7.16/openshift-client-linux-4.7.16.tar.gz
+mcm 2.3 console :  （ocp console-》monitoring-》Routes->localtion)
+https://cp-console.apps.nobly.os.fyre.ibm.com
+admin : wV7igHMH92eguJavqu4JQNaav0iz5Bbz
+
+
+堡垒机访问其他node，用core用户： ssh core@noed_ip,  sudo -i (切换到root下)
+oc get node
+ssh core@node_IP
+sudo -i
+
+Don't reboot the entire stack with 1 click from fyre admin console. This action can cause cluster corruption. If you need to reboot your cluster, 
+reboot workers first then reboot each master 1 at a time (leave about 3 to 5 min delay between them). This will help save your etcd_quorum.
+
+
+---------------------------------------------------------------------------------------------------------------------
+MSDN license: https://slm.dal1a.cirrus.ibm.com/SLM/Licenses  （old： https://slm.w3ibm.mybluemix.net/SLM/Licenses）
+how to effective MSDN license: https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/W62d35daee195_4475_a61e_8c1cd5a7312b/page/FAQs%20-%20Frequently%20Asked%20Questions?section=Windows%20Activation
+
+如何激活windows ： "Where do I put my Windows activation key now that I have it?" :
+http://fyrefaq1.fyre.ibm.com/FAQs%20-%20Frequently%20Asked%20Questions.html#Windows%20Activation
+
+1. https://my.visualstudio.com/productkeys , use ibm email to login 
+2. find "Windows Server 2016 Standard"
+3. copy product key : 2DQNY-QHJT9-X99TW-YH8WT-6F464
+4. login windows VM,-> system -> active windows -> change product key -> enter new key
+5. reboot windows
+6. go to fyre -> stacks -> 
+https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/W62d35daee195_4475_a61e_8c1cd5a7312b/page/FAQs%20-%20Frequently%20Asked%20Questions?section=Run%20a%20Security%20Scan%20%28SECaaS%29
+
+to refresh MSDN license
+---------------------------------------------------------------------------------------------------------------------
+创建测试环境说明：
+************************* new install RHEL8 后如何为yum 创建repo ************************
+https://it.baiked.com/database/4727.html
+ 
+#########################install vncserver on RHEL8  ###################################################################################################################
+on RHEL8 : https://www.ibm.com/support/pages/how-configure-vnc-server-red-hat-enterprise-linux-8
+1.  yum -y install tigervnc-server tigervnc
+1a. rpm -qa tigervnc (make sure tigervnc-1.11.0-6.el8 or higher)
+2.  yum -y group install GNOME base-x   OR  yum groupinstall "Server with GUI"   (yum grouplist)
+31. systemctl set-default graphical.target
+32. systemctl isolate graphical.target
+option 41. useradd vncuser1  (or goto 51)
+option 42. passwd vncuser1
+option 51. su - vncuser1     ( su - root)
+option 52. $vncpasswd        ( vncpasswd for created .vnc folder)
+6.  $ echo 'session=gnome' > ~/.vnc/config
+7.  exist to root: #echo ':1=root' >> /etc/tigervnc/vncserver.users  or echo ':1=vncuser1' >> /etc/tigervnc/vncserver.users
+8.  cp /lib/systemd/system/vncserver@.service /etc/systemd/system/vncserver@:1.service
+option: firewall-cmd --permanent --zone=public --add-port 5901/tcp
+option: firewall-cmd  --reload
+9.  systemctl enable vncserver@:1.service
+10. systemctl start vncserver@:1.service
+11. export LANGUAGE=en_US
+    export LANG="en_US.UTF-8"
+    export LC_TYPE="en_US.UTF-8"
+    export LC_ALL="en_US.UTF-8"
+
+
+从第4步开始如果添加其他用户，则可以启动2个vncserver， 初始port： 5901
+
+[root@ITMITCAMRH8 ~]# systemctl start vncserver@:1.service
+[root@ITMITCAMRH8 ~]# systemctl status vncserver@:1.service
+安装extension，使得右键可以出现菜单： https://access.redhat.com/documentation/zh-cn/red_hat_enterprise_linux/8/html-single/using_the_desktop_environment_in_rhel_8/index
+
+如果启动后失败，而/root/.vnc/<hostname>:1.log 报
+Errors from xkbcomp are not fatal to the X server
+xinit: XFree86_VT property unexpectedly has 0 items instead of 1
+xinit: connection to X server lost
+
+waiting for X server to shut down
+
+则有可能是bug： tigervnc: certificate exceptions stored as authorities (CVE-2020-26117) （https://access.redhat.com/errata/RHSA-2021:1783）
+查看tigervnc 版本，升级到tigervnc-1.11.0-6.el8 以上。
+如果还是报以上错误：yum update ; reboot
+
+check logs: journalctl --since "1 hour ago"
+---------------------------------------------------------------------------------------------------
+on RHEL7: 
+a. 安装vncserer: yum groupinstall "GNOME Desktop"  / if RHEL: yum groupinstall "Server with GUI"
+b. yum install tigervnc-server xorg-x11-fonts-Type1
+c. copy VNC config file /lib/systemd/system/vncserver@.service” to the “/etc/systemd/system/vncserver@:<Port_Number>.service”. ( Mine is 5 = 5905)
+    cp /lib/systemd/system/vncserver@.service /etc/systemd/system/vncserver@:5.service
+d. vi /etc/systemd/system/vncserver@:5.service , change 1 or 2 "linuxtechi" or <USER> to an user: root or liuyingj
+    (ExecStart=/usr/bin/vncserver_wrapper <USER> %i)
+    
+e. useradd -G root liuyingj  | passwd liuyingj : pass the same
+f. (option) firewall-cmd --permanent --zone=public --add-port=5905/tcp
+            firewall-cmd --reload
+g. (option) su - liuyingj  | vncserver : enter pass: liuyingj   
+h. Start and Enable the VNC Service at boot:  (不成功）
+    systemctl daemon-reload
+    systemctl start vncserver@:5.service
+    systemctl enable vncserver@:5.service
+    ln -s '/etc/systemd/system/vncserver@:5.service' '/etc/systemd/system/multi-user.target.wants/vncserver@:5.service'
+
+
+启动图形：
+1. VNC: a. vncserver | /usr/bin/vncpasswd  , b.vncview : server:2
+(如果出现黑屏已经3个选项框：
+1. 修改vnc 配置文件 /root/.vnc/xstartup
+#!/bin/sh
+
+# Uncomment the following two lines for normal desktop:
+unset SESSION_MANAGER
+exec /etc/X11/xinit/xinitrc
+[ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
+[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+xsetroot -solid grey
+vncconfig -iconic &
+#xterm -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
+#twm &
+gnome-session &
+
+2. 如果还是不行，yum -y groupinstall 'Desktop'  , if RHEL: yum groupinstall "Server with GUI" ， 如果登陆vnc viewer后，不能打开 terminal，是登陆vnc viewer前的locale 有问题，都设置成en_US.UTF-8就ok了。
+
+3. 安装应用，执行xhost +，并且提示“access control disabled, clients can connect from any host
+要： export DISPLAY=localhost:1 | xhost + （出现access control disabled, clients can connect from any host，就OK了
+其中localhost：x 的x就是vncserver的第x个启动
+
+4. 在桌面中点击laptop上的<windows>键，切换terminal
+5.有时vnc viewer 进入后无法用open terminate 打开命令行，这是要再运行 vncserver 看看生成的session有什么报错，如果报 LANG= no set,LC_ALL 等报错，需要在 etc/environment 中加上报错的这些参数，
+在进入vnc viewer后就可以打开 命令行了。
+
+6. 调整显示解析度，用vnc 进入linux OS 后，左上角图标-》system tools-》settings-》devices-》display-》resolution-》1920*1080 。
+
+
+2.xmanager pssive
+xshell -> login RH73 -> /usr/bin/xterm -ls -display $DISPLAY  （其中 export DISPLAY=127.0.0.1:10.0)
+and then putty： /usr/bin/xterm -ls -display $DISPLAY  （其中 export DISPLAY=127.0.0.1:10.0)
+
+(xmanager 上安装install manager 1.8.3报错，用命令行安装的 installc -c)
+
+3. ftp失败，用scp：  scp ./apm_hybrid_gateway_8.1.4.0.tar root@9.110.179.31:/opt/images/.   （从当前server目录copy到9.110.179.31的/opt/images/下）
+4. 如果忘记root密码，在VM列表上，选择相应的VM，在“操作”选择“创建临时账户”，用临时账户登录，用 sudo passwd 改root 密码。
+5. 从mac宿主机向VM上copy文件，可以先复制宿主机上的文件，到VM上paste即可。或者用scp /../file root@IP:/folder , scp /../file adminstrator@IP:"c:\"
+          如果出现 > 提示，则是  scp /../file root@IP:/folder , scp /../file adminstrator@IP:"/c:/"
+6. VM的管理，克隆：
+http://ringcloud.cn.ibm.com/provision/manageCloud
+
+7. laptop 上查找某些文件内容， 进入 cd /Users/liuyingjian， source ./search.sh， 用命令grep -ri "strings" *
+
+8. laptop 上从VM 上copy文件下来: scp -r administrator@IP:"c:\users\download\file_name"  .
+
+############################################################################################################################################
+---------------------------------------------------------------------------------------------------------------------
+[root@ITM630RH7 bin]# ./nco_pa_status -server ITM630RH7_PA -user root -password tang1sengtang1seng
+-------------------------------------------------------------------------------
+Service Name         Process Name         Hostname   User      Status      PID
+-------------------------------------------------------------------------------
+Core                 MasterObjectServer   ITM630RH7.cn.ibm.comroot      RUNNING   18019
+                     nco_p_tivoli_eif     ITM630RH7  root      RUNNING   18020
+                     SyslogProbe          ITM630RH7  root      RUNNING   18259
+-------------------------------------------------------------------------------
+[root@ITM630RH7 bin]# ./nco_pa_stop -server ITM630RH7_PA -process nco_p_tivoli_eif -password Sun5kongSun5kong
+[root@ITM630RH7 bin]# ./nco_pa_status -server ITM630RH7_PA -user root -password tang1sengtang1seng
+-------------------------------------------------------------------------------
+Service Name         Process Name         Hostname   User      Status      PID
+-------------------------------------------------------------------------------
+Core                 MasterObjectServer   ITM630RH7.cn.ibm.comroot      RUNNING   18019
+                     nco_p_tivoli_eif     ITM630RH7  root      DEAD          0
+                     SyslogProbe          ITM630RH7  root      RUNNING   18259
+-------------------------------------------------------------------------------
+[root@ITM630RH7 bin]# ./nco_pa_start -server ITM630RH7_PA -process nco_p_tivoli_eif -password Sun5kongSun5kong
+[root@ITM630RH7 bin]# ./nco_pa_status -server ITM630RH7_PA -user root -password Sun5kongSun5kong
+-------------------------------------------------------------------------------
+Service Name         Process Name         Hostname   User      Status      PID
+-------------------------------------------------------------------------------
+Core                 MasterObjectServer   ITM630RH7.cn.ibm.comroot      RUNNING   18019
+                     nco_p_tivoli_eif     ITM630RH7  root      PENDING       0
+                     SyslogProbe          ITM630RH7  root      RUNNING   18259
+-------------------------------------------------------------------------------
+/opt/IBM/tivoli/netcool/omnibus/bin: ./nco_pa_shutdown -server ITM630RH7_PA -password tang1sengtang1seng
+/opt/IBM/tivoli/netcool/omnibus/bin: ./nco_pad -name ITM630RH7_PA  [-authenticate PAM]
+[root@ITM630RH7 bin]#
+-------------------------------------------------------------------------------------------------------------------------------
+AGGBwin016: file gateway
+C:\IBM\Tivoli\Netcool\omnibus\bin>nco_g_file -propsfile  C:\IBM\Tivoli\Netcool\omnibus\etc\win2016_FILE_GATE.props
+output file : C:\IBM\Tivoli\Netcool\omnibus\gates\file\agg_p_filegw_output.log
+----------------------------------------------------------------------------------------------------------------------------------------
+/opt/IBM/tivoli/netcool/omnibus/bin: ./nco_sql -server AGG_P -user root -password tang1sengtang1seng
+----------------------------------------------------------------------------------------------------------------------------------------
+如果object server的密码忘记了，只能用 nco_dbinit -server AGG_P -force 重置, 这样，需要重新导入3个ITM的rules：
+./nco_sql -server AGG_P -user root -password tang1sengtang1seng < /opt/IBM/SitForwarder/omnibus/itm_proc.sql
+./nco_sql -server AGG_P -user root -password tang1sengtang1seng < /opt/IBM/SitForwarder/omnibus/itm_db_update.sql
+./nco_sql -server AGG_P -user root -password tang1sengtang1seng < /opt/IBM/SitForwarder/omnibus/itm_sync.sql
+以及运行aggregation.sql：  $NCHOME/omnibus/bin/nco_sql -server AGG_P -user root –password tang1sengtang1seng < $NCHOME/omnibus/extensions/multitier/objectserver/aggregation.sql
+"%NCHOME%\omnibus\bin\isql" -S AGG_B -U root -P password -i "%NCHOME%\omnibus\extensions\multitier\objectserver\aggregation.sql"
+(windows下的object 的参数都是大写)
+----------------------------------------------------------------------------------------------------------------------------------------
+AGGBwin016上登陆webgui的AEL和event console，是白屏，什么信息都没有,ncw日志里也没有信息，
+解决：安装java 1.7 plugin，（先登陆ITM server的1920：httphttp://9.111.96.155:1920， 点击web broswer,会自动下载java 1.7 plugin，安装后，再登陆webgui的AEL，有结果了。
+这个和本地的java plugin有关，所以其他server如果没有java plugin（比如在我的macos 上登陆webgui 还是白屏）. 但是可以用LEL代替，这个和java 无关。
+在其他已经有javaplugin的server上的要再将 9.111.96.147 加大IE的trust site里以及加到 compatibility view settings中。
+*******************************************************************************************************************************************************
+needs: itcam for WAS, AB agent,
+---------------------------------------------------------------------------------------------------------------------------------------
+1. startup omnibus object server and probes : login ITM630RH7, cd $OMNIHOME/bin/ | ./nco_pad -name ITM630RH7_PA
+2. omnibus config: nco_config, event: nco_event
+3. 9.115.67.22 运行studio，点击某个table，右键“broswer data”可看到这个表的数据。
+4. Cognos TCR showed 'no data set' : https://www-01.ibm.com/support/docview.wss?uid=swg21576072
+
+5. start TCR / DASH : C:\Program Files\IBM\JazzSM\profile\bin>startserver server1
+6. login DASH : http://9.112.232.50:16311/ibm/console  smadmin/Sun5kong
+7. oracle : su - oracle , $ORACLE_HOME/bin/lsnrctl start [listenername] , sqlplus /nolog ; conn sys/Sun5kong@orclrz as sysdba ; startup
+    (sqlplus "/as sysdba")
+   setarch $(uname -m) --uname-2.6 ; itmcmd start agent -o 1RZ start rz ;  /itmcmd agent -o 2RZ-TNS start rz
+7.1 里面用tivoli用户监控oracle, 定期改密码: SQL> alter user tivoli identified by Sun5kong;  查看哪些用户：SQL> select username from dba_users;
+
+
+----------------------------------------------------------------------------------------------------------------------
+import UD agent report:
+1. http://www-01.ibm.com/support/docview.wss?uid=swg21631368
+2. https://www.ibm.com/support/knowledgecenter/SSEKCU_1.1.3.0/com.ibm.psc.doc/tcr_original/ttcr_import.html
+3. https://www.ibm.com/support/knowledgecenter/SSEKCU_1.1.3.0/com.ibm.psc.doc/ref/psc_r_pathnames.html#psc_r_pathnames__cognos_root
+
+1. 将IBM_Tivoli_Composite_Application_Manager_Agent_for_DB2_v7.1 copy到C:\Program Files\IBM\JazzSM\reporting\cognos\deployment
+2. 重启TCR，
+3. 启动-》administrator-》configuration-》content manager-》create an new import, 选择刚copy进去的report
+4. 导入的时候，在名称前面打钩，否则不显示出来。
+5. 运行一次。
+6. 在common report的公共文件夹下有显示刚导入的report。
+
+-----------------------------------------------------------------------------------------------------------------------------------
+install oracle 19c on RHEL8
+method1:
+1. https://blog.51cto.com/lhrbest/2705322
+2. $export CV_ASSUME_DISTID=OEL7.8   (othewise, he OUI installer in silent mode stops and shows this error message: [WARNING] [INS-08101] Unexpected error while executing the action at state: ‘supportedOSCheck’. There is no parameter available)
+$  $./runInstaller 
+3. password for sys/system/pdadmin : Sun5kong
+4. netca /  dbca -J-Doracle.assistants.dbca.validate.ConfigurationParams=false  (otherwise, reported Install Error [DBT-50000] Unable to check for available memory)
+5.1. SQL> alter session set "_oracle_script"=true;
+5.2. SQL> create user itmuser1 identified by Sun5kong;
+5.3. SQL> @/opt/IBM/ITM/lx8266/rz/bin/krzgrant.sql itmuser1 /opt/IBM/ITM/tmp
+
+
+method2:
+1.download  https://www.oracle.com/database/technologies/oracle19c-linux-downloads.html
+2. download oracle-database-preinstall-19c : 
+ # curl -o oracle-database-preinstall-19c-1.0-1.el7.x86_64.rpm https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackage/oracle-database-preinstall-19c-1.0-1.el7.x86_64.rpm
+ # yum -y localinstall oracle-database-preinstall-19c-1.0-1.el7.x86_64.rpm
+3. 
+wget http://mirror.centos.org/centos/7/os/x86_64/Packages/compat-libstdc++-33-3.2.3-72.el7.x86_64.rpm
+wget http://mirror.centos.org/centos/7/os/x86_64/Packages/compat-libcap1-1.10-7.el7.x86_64.rpm
+ 
+yum localinstall compat-libstdc++-33-3.2.3-72.el7.x86_64.rpm
+yum localinstall compat-libcap1-1.10-7.el7.x86_64.rpm
+yum localinstall oracle-database-preinstall-19c-1.0-1.el7.x86_64.rpm
+4. yum install oracle-database-ee-19c-1.0-1.x86_64.rpm
+5. https://blog.tiento.pl/install-oracle-19c-on-rhel-8/
+6. Creating and Configuring an Oracle Database
+61. login as root
+62. # /etc/init.d/oracledb_ORCLCDB-19c configure   
+(This script creates a container database (ORCLCDB) with one pluggable database (ORCLPDB1) and configures the listener at the default port (1521).)
+(Database creation complete. For details check the logfiles at:
+ /opt/oracle/cfgtoollogs/dbca/ORCLCDB.
+Database Information:
+Global Database Name:ORCLCDB
+System Identifier(SID):ORCLCDB
+Look at the log file "/opt/oracle/cfgtoollogs/dbca/ORCLCDB/ORCLCDB.log" for further details.)
+
+Database configuration completed successfully. The passwords were auto generated, you must change them by connecting to the database using 'sqlplus / as sysdba' as the oracle user.)
+
+7. su - oracle , modify .bash_profile, add :
+export ORACLE_SID=orcl
+export ORACLE_HOME=/opt/oracle/product/19c/dbhome_1
+export PATH=$PATH:/opt/oracle/product/19c/dbhome_1/bin
+
+8. exit, su - oracle, sqlplus /nolog, startup :
+could not open parameter file '/opt/oracle/product/19c/dbhome_1/initORCL.ora'
+find /u01 -name pfile查询pfile文件位置, 
+将pfile目录下的init.ora.026201514119形式的文件copy到/opt/oracle/product/19c/dbhome_1/initORCL.ora命名为initorcl.ora即可。
+
+[oracle@RZRH81 dbhome_1]$ export CV_ASSUME_DISTID=OEL7.8
+[oracle@RZRH81 dbhome_1]$ ./runInstaller 
+
+(old:)
+1. 扩充swap：https://blog.csdn.net/l106439814/article/details/24619937
+2. https://blog.csdn.net/admin_root1/article/details/78911714
+http://www.cnblogs.com/kerrycode/p/3319958.html（有如何修改内核参数）
+
+oracle :
+su - oracle
+sqlplus /nolog
+conn sys/pass as sysdba
+startup / shutdown immediate
+
+lsnrctl start/stop/status
+---------------------------------------------SQL commands ------------------------------------------------------------
+# lsnrctl status LISTENER
+
+SQL> select value from v$parameter;
+SQL> select name from v$database; select instance_name from v$instance;
+SQL> COLUMN NAME FORMAT A20
+     COLUMN NAME PDB A10
+SQL> SELECT NAME, CON_ID, DBID, CON_UID, GUID FROM V$CONTAINERS ORDER BY CON_ID;
+SQL> select * from all_users;
+SQL> SELECT NAME from v$services (用sys用户连接才能显示)
+-----------------------------------------------------------------------------------------------------------------------
+
+如果shutdown immediate， 则TEP上RZ导航树的
+ORACEL DATABASE EXTEND         (深色）
+-- INSTANCE-HOST-RZ             (深色）
+---- NETSERIVE CONNECTION       (深色）
+---- TAKE ACTION RESULT         (深色）
+-- ORACLE-RDBMS-RZ-INSTANCE-hostname:RDB    灰色的，相当于RZ停止了.
+----------------------------------------------------------------------------------
+sqlplus tivoli/Sun5kong
+sqlplus tivoli/Sun5kong@orclrz
+sqlplus tivoli/Sun5kong@"(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=RZRH7.cn.ibm.com)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=orclrz)))" 
+----------------------------------------------------------------------------------
+
+C:\instantclient_12_2>set NLS_LANG=SIMPLIFIED CHINESE_CHINA.ZHS16GBK
+C:\instantclient_12_2>sqlplus sys/Sun5kong@orclrz as sysdba
+C:\instantclient_12_2>sqlplus sys/@orclrz as sysdba
+
+------------------------------------------------------------------------------------------------------------------------------
+安装mysql community 版本，用zypper 选版本安装
+https://dev.mysql.com/doc/mysql-sles-repo-quick-guide/en/#repo-qg-sles-fresh-install
+具体安装配置可参考
+C:\AAWork\Books\APM ITM ITCAM Netcool\install screenshot\MYSQL agent in Suse12.3 but no in Ubuntu 16.04
+
+Install mysql on Ubuntu16.04: 
+1. sudo apt-get install mysql-server mysql-client
+root pass: rootrootroot
+2. test: sudo netstat -tap | grep mysql
+3. mysqladmin -p -u root version
+   systemctl status mysql.service
+   
+-----------------------------------------------------------------------------------------------------------------------------------
+install db2 v11 on RHEL 8:
+https://www.cnblogs.com/dahaoran/p/9191748.html
+https://www.programminghunter.com/article/6505572388/
+-----------------------------------------------------------------------------------------------------------------------------------
+security compliance issue:
+1. 查看所有VM的列表 ：https://cloud.cn.ibm.com/portal/entry
+其中Xcloud 上的vm ： https://cloud.cn.ibm.com/kvm/instance
+
+2，查看所有VM的compliance 情况： https://security.fyre.ibm.com/images
+或者： https://security.fyre.ibm.com/login -》 MY instance
+
+3. complaince guide：
+https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/W64176f67fcd2_45f1_a77e_0c2a0419b18d/page/Noncompliance%20Remediation?section=%E5%9C%A8SECaaS%E6%9F%A5%E7%9C%8B%E6%9C%BA%E5%99%A8%E7%9A%84%E5%AE%89%E5%85%A8%E5%90%88%E8%A7%84%E7%8A%B6%E6%80%81
+
+4.如果发现问题，开ticket ：
+https://oneticket.rtp.raleigh.ibm.com/OneTicket/frontend/mainpage/index.html#!/home
+Category : Security and Compliance --> Security as a Service --> CDL.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+install 、 upgrade ansible ：
+wget https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/xxxxxxxxxx
+rpm -ivh xxxxxxxxxx
+-----------------------------------------------------------------------------------------------------------------------------------
+upgrade RHEL 7.x to RHEL 7.9   OR (8.x)
+yum update redhat-release-server*
+yum update --security
+
+upgrade RHEL 7.9 to RHEL 8.x 
+wget https://access.redhat.com/sites/default/files/attachments/leapp-data3.tar.gz
+yum versionlock clear
+yum update
+reboot
+
+没成功
+-----------------------------------------------------------------------------------------------------------------------------------
+reported : SSLv3 vulnerability , length < 64bit etc
+KDEBE_TLS10_ON=NO
+KDEBE_TLS11_ON=NO
+KDC_FAMILIES=HTTP_CONSOLE:N HTTP:0 HTTPS:0 ${KDC_FAMILIES}
+-----------------------------------------------------------------------------------------------------------------------------------
+
+REDHAT trainning:
+0. install oc client in linux : 
+0.1: wget https://mirror.openshift.com/pub/openshift-v4/clients/oc/4.4/linux/oc.tar.gz
+(curl https://mirror.openshift.com/pub/openshift-v4/clients/oc/4.4/linux/oc.tar.gz -o linux/oc.tar.gz)
+0.2: tar zxvf oc.tar.gz
+0.3: export PATH=$PATH:/root
+
+1. https://labs.opentlc.com/service/explorer    : (user:liuyingj-cn.ibm.com / Zaq1!xsw2@)
+Services → Catalogs → All Services → OPENTLC Automation - select Ansible implementation -> order (第一次才用或者上一次order的过期了)
+service -> my active services -> select a service (在service的描述里可以看到上面order的service) -> app control -> staus
+( 拉开右边的窗口，一个服务下有很多的host,找到bastion作为测试主机，假如是54.146.210.130,如果status是stopped，则在app control中start it，选yes，点击submit) 
+2. https://www.opentlc.com/ssh.html
+3. 在FYREd的一个测试机上（9.112.254.170）发出： ssh -i /root/.ssh/id_rsa liuyingj-cn.ibm.com@54.146.210.130
+or : ssh liuyingj-cn.ibm.com@3.216.102.220
+这是ansible implementation的测试机。
+4. 测试要用devops用户，如果没有，sudo -i, 
+useradd devops
+echo 'Zaq1!xsw2@' | passwd --stdin devops
+su - devops
+ssh-keygen -N '' -f ~/.ssh/id_rsa
+ls -l ~/.ssh/
+exit , return root 
+ansible all --list-hosts
+ansible all -m ping	
+ansible all -m user -a "name=devops"
+cat /home/devops/.ssh/id_rsa.pub      (copy output)
+ansible all -m authorized_key -a "user=devops state=present key='xxxxxxxxxx devops@bastion.${GUID}.example.opentlc.com'"
+ansible all -m lineinfile -a "dest=/etc/sudoers state=present line='devops ALL=(ALL) NOPASSWD: ALL'"
+
+[devops@bastion ~]$ mkdir ansible_implementation
+[devops@bastion ~]$ cd ansible_implementation/
+[devops@bastion ansible_implementation]$ cat << EOF > ansible.cfg
+[defaults]
+inventory = /home/devops/ansible_implementation/hosts
+host_key_checking = False
+EOF
+
+cat << EOF > /home/devops/ansible_implementation/hosts
+frontend1 
+appdb1 
+app1 
+support1 
+app2
+EOF
+
+剩下步骤在testing machine history中有。
